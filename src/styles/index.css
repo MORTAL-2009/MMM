@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  Make My Marriage Luxury Design System
+  Themes: 
+  1. gold-noir (Default): Deep charcoal, antique gold accents
+  2. emerald-velvet: Deep emerald green, rich gold accents
+  3. sapphire-lounge: Midnight navy blue, royal gold accents
+  4. champagne-pearl: Warm ivory/champagne, soft glowing gold
+*/
+
+:root, [data-theme="gold-noir"] {
+  --color-bg-base: #0B0C10;
+  --color-bg-card: #15171E;
+  --color-bg-muted: #1F222E;
+  --color-border: #2A2E3D;
+  --color-border-glow: rgba(212, 175, 55, 0.3);
+  
+  --color-primary-50: #FFFDF0;
+  --color-primary-100: #FDF9D9;
+  --color-primary-200: #F9EFB0;
+  --color-primary-300: #F5E282;
+  --color-primary-400: #E5C158;
+  --color-primary-500: #D4AF37; /* Antique Gold */
+  --color-primary-600: #B89225;
+  --color-primary-700: #8C6D15;
+  --color-primary-800: #5C4609;
+  --color-primary-900: #332604;
+  --color-primary-glow: rgba(212, 175, 55, 0.25);
+  
+  --text-main: #F3F4F6;
+  --text-muted: #9CA3AF;
+  --text-accent: #F3E5AB;
+}
+
+[data-theme="emerald-velvet"] {
+  --color-bg-base: #06140D;
+  --color-bg-card: #0D2319;
+  --color-bg-muted: #143527;
+  --color-border: #1D4735;
+  --color-border-glow: rgba(52, 211, 153, 0.3);
+
+  --color-primary-50: #ECFDF5;
+  --color-primary-100: #D1FAE5;
+  --color-primary-200: #A7F3D0;
+  --color-primary-300: #6EE7B7;
+  --color-primary-400: #34D399;
+  --color-primary-500: #10B981; /* Emerald */
+  --color-primary-600: #059669;
+  --color-primary-700: #047857;
+  --color-primary-800: #065F46;
+  --color-primary-900: #064E3B;
+  --color-primary-glow: rgba(16, 185, 129, 0.25);
+
+  --text-main: #F0FDF4;
+  --text-muted: #A7F3D0;
+  --text-accent: #E5C158;
+}
+
+[data-theme="sapphire-lounge"] {
+  --color-bg-base: #070B19;
+  --color-bg-card: #0F172A;
+  --color-bg-muted: #1E293B;
+  --color-border: #334155;
+  --color-border-glow: rgba(96, 165, 250, 0.3);
+
+  --color-primary-50: #EFF6FF;
+  --color-primary-100: #DBEAFE;
+  --color-primary-200: #BFDBFE;
+  --color-primary-300: #93C5FD;
+  --color-primary-400: #60A5FA;
+  --color-primary-500: #3B82F6; /* Sapphire */
+  --color-primary-600: #2563EB;
+  --color-primary-700: #1D4ED8;
+  --color-primary-800: #1E40AF;
+  --color-primary-900: #1E3A8A;
+  --color-primary-glow: rgba(59, 130, 246, 0.25);
+
+  --text-main: #F8FAFC;
+  --text-muted: #94A3B8;
+  --text-accent: #F3E5AB;
+}
+
+[data-theme="champagne-pearl"] {
+  --color-bg-base: #1C1917;
+  --color-bg-card: #292524;
+  --color-bg-muted: #44403C;
+  --color-border: #57534E;
+  --color-border-glow: rgba(245, 158, 11, 0.3);
+
+  --color-primary-50: #FFFBEB;
+  --color-primary-100: #FEF3C7;
+  --color-primary-200: #FDE68A;
+  --color-primary-300: #FCD34D;
+  --color-primary-400: #FBBF24;
+  --color-primary-500: #F59E0B; /* Warm Champagne */
+  --color-primary-600: #D97706;
+  --color-primary-700: #B45309;
+  --color-primary-800: #92400E;
+  --color-primary-900: #78350F;
+  --color-primary-glow: rgba(245, 158, 11, 0.25);
+
+  --text-main: #FAFAF9;
+  --text-muted: #D6D3D1;
+  --text-accent: #FEF3C7;
+}
+
+/* 5. Stitch Signature Theme: Atelier Nuptials (Deep Royal Emerald & Warm Ivory) */
+[data-theme="atelier-nuptials"] {
+  --color-bg-base: #F7F2E8;
+  --color-bg-card: #FAF6EF;
+  --color-bg-muted: #F0E9DC;
+  --color-border: #E7DFCE;
+  --color-border-glow: rgba(197, 160, 89, 0.45);
+
+  --color-primary-50: #FAF6EF;
+  --color-primary-100: #F4EDE0;
+  --color-primary-200: #E9DAC0;
+  --color-primary-300: #C5A059;
+  --color-primary-400: #9C7A3C;
+  --color-primary-500: #0D221A; /* Deep Emerald */
+  --color-primary-600: #081611;
+  --color-primary-700: #173428;
+  --color-primary-800: #203C32;
+  --color-primary-900: #06140D;
+  --color-primary-glow: rgba(197, 160, 89, 0.25);
+
+  --text-main: #1A1E1C;
+  --text-muted: #4E5752;
+  --text-accent: #9C7A3C;
+}
+
+/* Stitch Signature Aesthetic Classes */
+.gold-foil-border {
+  border-color: rgba(197, 160, 89, 0.35);
+}
+
+.gold-glow {
+  box-shadow: 0 10px 30px -10px rgba(197, 160, 89, 0.2), 0 4px 16px -2px rgba(14, 32, 25, 0.06);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #745A27 0%, #C5A059 50%, #947132 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-foil-bg {
+  background: linear-gradient(135deg, #DFCA9E 0%, #C5A059 50%, #B89248 100%);
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+}
+
+/* Glassmorphism and Luxury Glows */
+.glass-panel {
+  background: rgba(21, 23, 30, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border);
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to right, #D4AF37, #AA7C11) 1;
+}
+
+/* Custom Scrollbar for Luxury Look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-base);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-500);
+}

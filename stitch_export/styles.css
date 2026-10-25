@@ -1,0 +1,22 @@
+
+@layer base{
+  html,body{margin:0;padding:0;background-color:#F7F2E8;}
+  body{overscroll-behavior:none;}
+  main>:first-child{margin-top:0!important;}
+  main>:last-child{margin-bottom:0!important;}
+}
+::-webkit-scrollbar{display:none;}
+.gold-foil-border {
+  border-color: rgba(197, 160, 89, 0.35);
+}
+.gold-glow {
+  box-shadow: 0 10px 30px -10px rgba(197, 160, 89, 0.2), 0 4px 16px -2px rgba(14, 32, 25, 0.06);
+}
+.gold-gradient-text {
+  background: linear-gradient(135deg, #745A27 0%, #C5A059 50%, #947132 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gold-foil-bg {
+  background: linear-gradient(135deg, #DFCA9E 0%, #C5A059 50%, #B89248 100%);
+}

@@ -1,0 +1,163 @@
+<section className="w-full py-16 bg-[#F4EFE6] border-t border-b border-gold-accent/25" id="features-overview">
+<div className="w-full max-w-[1360px] mx-auto px-6 md:px-10 lg:px-14">
+<div className="text-center max-w-2xl mx-auto mb-16">
+<div className="inline-flex items-center gap-2 mb-3">
+<span className="w-8 h-px bg-gold-accent"></span>
+<span className="text-[10px] uppercase font-bold tracking-[0.25em] text-secondary">Curated Atelier Modules</span>
+<span className="w-8 h-px bg-gold-accent"></span>
+</div>
+<h2 className="font-headline-lg text-3xl md:text-4xl text-primary mt-1 mb-4 tracking-tight">
+          The planning feels effortless when every ritual is honored.
+        </h2>
+<p className="text-base text-on-surface-variant font-light">
+          From the earliest auspicious date discussions to the final guest farewell, coordinate every milestone with poise.
+        </p>
+</div>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Feature 1: Wedding Expenses -->
+<div className="bg-[#FAF6EF] rounded-2xl border border-gold-accent/40 p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div className="absolute top-0 right-0 w-32 h-32 bg-gold-accent/5 rounded-bl-full pointer-events-none"></div>
+<div>
+<div className="w-11 h-11 rounded-lg bg-[#0D221A] border border-gold-accent/40 flex items-center justify-center mb-5 text-gold-accent">
+<span className="material-symbols-outlined text-xl">pie_chart</span>
+</div>
+<h3 className="font-headline-sm text-2xl text-primary mb-2">Royal Wedding Outlays</h3>
+<p className="text-sm text-on-surface-variant mb-6 font-light leading-relaxed">
+              Track vendor deposits, parent contributions, and dual-family allocations without awkward financial conversations.
+            </p>
+</div>
+<!-- Micro Spend Breakdown UI -->
+<div className="bg-[#F4EDE0] rounded-xl p-5 border border-gold-accent/30">
+<div className="flex justify-between items-center mb-3">
+<span className="text-[10px] uppercase tracking-[0.2em] font-bold text-outline">Major Allocations</span>
+<span className="text-xs text-primary font-semibold">₹6,80,000 committed</span>
+</div>
+<div className="h-2 rounded-full bg-[#E2D8C7] flex overflow-hidden mb-4 border border-gold-accent/20">
+<div className="h-full bg-primary" style={{"width":"45%"}}></div>
+<div className="h-full bg-secondary" style={{"width":"25%"}}></div>
+<div className="h-full bg-gold-accent" style={{"width":"18%"}}></div>
+<div className="h-full bg-outline" style={{"width":"12%"}}></div>
+</div>
+<div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+<div className="flex items-center gap-1.5">
+<span className="w-2 h-2 rounded-full bg-primary"></span>
+<span className="text-xs text-on-surface font-medium">Palace (45%)</span>
+</div>
+<div className="flex items-center gap-1.5">
+<span className="w-2 h-2 rounded-full bg-secondary"></span>
+<span className="text-xs text-on-surface font-medium">Banquet (25%)</span>
+</div>
+<div className="flex items-center gap-1.5">
+<span className="w-2 h-2 rounded-full bg-gold-accent"></span>
+<span className="text-xs text-on-surface font-medium">Mandap (18%)</span>
+</div>
+<div className="flex items-center gap-1.5">
+<span className="w-2 h-2 rounded-full bg-outline"></span>
+<span className="text-xs text-on-surface font-medium">Flora (12%)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Feature 2: Family Conversations -->
+<div className="bg-[#FAF6EF] rounded-2xl border border-gold-accent/40 p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div className="absolute top-0 right-0 w-32 h-32 bg-gold-accent/5 rounded-bl-full pointer-events-none"></div>
+<div>
+<div className="w-11 h-11 rounded-lg bg-[#0D221A] border border-gold-accent/40 flex items-center justify-center mb-5 text-gold-accent">
+<span className="material-symbols-outlined text-xl">forum</span>
+</div>
+<h3 className="font-headline-sm text-2xl text-primary mb-2">Family Chambers &amp; Dialogue</h3>
+<p className="text-sm text-on-surface-variant mb-6 font-light leading-relaxed">
+              Keep planning updates and delicate decisions in one shared salon for both sides, preserving warmth, respect, and grace.
+            </p>
+</div>
+<!-- Micro Chat Snippet -->
+<div className="bg-[#F4EDE0] rounded-xl p-4 border border-gold-accent/30 space-y-3">
+<div className="flex items-start gap-2.5">
+<div className="w-7 h-7 rounded-full bg-[#0D221A] text-gold-accent border border-gold-accent/40 flex items-center justify-center text-xs font-serif font-bold">S</div>
+<div className="bg-[#FAF6EF] p-3 rounded-lg rounded-tl-none border border-gold-accent/30 max-w-[85%] shadow-xs">
+<p className="text-[9px] uppercase tracking-wider text-secondary font-bold mb-0.5">Sharma Family (Bride's Chamber)</p>
+<p className="text-xs text-on-surface font-normal">Catering tasting for the Rajasthani Royal Thali confirmed for this Sunday afternoon?</p>
+</div>
+</div>
+<div className="flex items-start gap-2.5 justify-end">
+<div className="bg-[#0D221A] text-[#FAF6EF] p-3 rounded-lg rounded-tr-none max-w-[85%] border border-gold-accent/30">
+<p className="text-[9px] uppercase tracking-wider text-gold-accent font-bold mb-0.5">Verma Family (Groom's Chamber)</p>
+<p className="text-xs text-[#F7F2E8] font-normal">Splendid. Kabir uploaded the Sangeet musical curation in the workspace files as well.</p>
+</div>
+<div className="w-7 h-7 rounded-full bg-secondary text-[#FAF6EF] border border-gold-accent/40 flex items-center justify-center text-xs font-serif font-bold">V</div>
+</div>
+</div>
+</div>
+<!-- Feature 3: Digital Invitations -->
+<div className="bg-[#FAF6EF] rounded-2xl border border-gold-accent/40 p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div className="absolute top-0 right-0 w-32 h-32 bg-gold-accent/5 rounded-bl-full pointer-events-none"></div>
+<div>
+<div className="w-11 h-11 rounded-lg bg-[#0D221A] border border-gold-accent/40 flex items-center justify-center mb-5 text-gold-accent">
+<span className="material-symbols-outlined text-xl">mark_email_read</span>
+</div>
+<h3 className="font-headline-sm text-2xl text-primary mb-2">Bespoke Digital Invitations</h3>
+<p className="text-sm text-on-surface-variant mb-6 font-light leading-relaxed">
+              Design an heirloom digital stationery suite delivered through a private link, complete with interactive schedules and dietary RSVPs.
+            </p>
+</div>
+<!-- RSVP Tracker Tag Preview -->
+<div className="bg-[#F4EDE0] rounded-xl p-4 border border-gold-accent/30 flex items-center justify-between">
+<div className="flex items-center gap-3">
+<div className="w-10 h-10 rounded-lg bg-[#FAF6EF] border border-gold-accent/40 flex items-center justify-center text-secondary">
+<span className="material-symbols-outlined text-xl">mail</span>
+</div>
+<div>
+<p className="text-xs font-semibold text-primary">makemymarriage.com/aanya-kabir</p>
+<p className="text-[11px] text-outline font-light">420 Delivered · 98% VIP Opened</p>
+</div>
+</div>
+<div className="text-right">
+<span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#0D221A] text-gold-accent border border-gold-accent/30 text-xs font-medium">
+<span className="material-symbols-outlined text-xs">done_all</span>
+                342 Confirmed
+              </span>
+</div>
+</div>
+</div>
+<!-- Feature 4: Admin Panel & Brand Styling Suite -->
+<div className="bg-[#FAF6EF] rounded-2xl border border-gold-accent/40 p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div className="absolute top-0 right-0 w-32 h-32 bg-gold-accent/5 rounded-bl-full pointer-events-none"></div>
+<div>
+<div className="flex items-center justify-between mb-5">
+<div className="w-11 h-11 rounded-lg bg-[#0D221A] border border-gold-accent/40 flex items-center justify-center text-gold-accent">
+<span className="material-symbols-outlined text-xl">admin_panel_settings</span>
+</div>
+<span className="text-[9px] px-2.5 py-0.5 rounded-full bg-[#F0E9DC] border border-gold-accent/40 text-secondary uppercase tracking-widest font-bold">Admin Suite</span>
+</div>
+<h3 className="font-headline-sm text-2xl text-primary mb-2">Admin Panel &amp; Heritage Studio</h3>
+<p className="text-sm text-on-surface-variant mb-6 font-light leading-relaxed">
+              Comprehensive controls for royal family branding, crest monograms, bespoke royal palettes, typography, and guest access privacy.
+            </p>
+</div>
+<div className="bg-[#F4EDE0] rounded-xl p-4 border border-gold-accent/30 space-y-3">
+<div className="flex flex-wrap items-center justify-between gap-2 pb-2.5 border-b border-gold-accent/20">
+<div className="flex items-center gap-2">
+<span className="text-[10px] uppercase font-bold tracking-wider text-outline">Active Palette:</span>
+<div className="flex items-center gap-1.5">
+<span className="w-4 h-4 rounded-full bg-[#0D221A] ring-2 ring-gold-accent ring-offset-1"></span>
+<span className="w-4 h-4 rounded-full bg-[#C5A059]"></span>
+<span className="w-4 h-4 rounded-full bg-[#FAF6EF] border border-gold-accent/40"></span>
+<span className="w-4 h-4 rounded-full bg-[#521C27]"></span>
+</div>
+</div>
+<span className="text-[10px] text-secondary font-bold tracking-wider uppercase">Emerald &amp; Champagne</span>
+</div>
+<div className="flex items-center justify-between text-xs text-on-surface-variant">
+<div className="flex items-center gap-1.5">
+<span className="material-symbols-outlined text-secondary text-base">verified_user</span>
+<span className="text-[11px] font-light">Dual Host Authority Active</span>
+</div>
+<a className="text-secondary font-semibold hover:text-primary inline-flex items-center gap-0.5 text-xs tracking-wider uppercase transition-colors" href="#admin-panel-section">
+                Open Admin <span className="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>

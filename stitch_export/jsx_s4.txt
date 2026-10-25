@@ -1,0 +1,153 @@
+<section className="w-full py-20 bg-[#F7F2E8]">
+<div className="w-full max-w-[1360px] mx-auto px-6 md:px-10 lg:px-14">
+<div className="text-center max-w-2xl mx-auto mb-12">
+<div className="inline-flex items-center gap-2 mb-3">
+<span className="w-8 h-px bg-gold-accent"></span>
+<span className="text-[10px] uppercase font-bold tracking-[0.25em] text-secondary">The Digital Concierge</span>
+<span className="w-8 h-px bg-gold-accent"></span>
+</div>
+<h2 className="font-headline-lg text-3xl md:text-4xl text-primary mt-1 mb-3">A workspace that brings serenity to scale</h2>
+<p className="text-base text-on-surface-variant font-light">Experience how effortless royal cross-family coordination feels inside your personalized salon.</p>
+</div>
+<!-- Main Workspace Glass Card -->
+<div className="bg-[#FAF6EF] rounded-2xl border-2 border-gold-accent/40 shadow-[0_24px_60px_-15px_rgba(13,34,26,0.12)] overflow-hidden">
+<!-- Workspace Header Bar -->
+<div className="bg-[#F0E9DC] border-b border-gold-accent/30 px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div className="flex items-center gap-3.5">
+<div className="w-10 h-10 rounded-full border-2 border-gold-accent/60 bg-[#0D221A] text-gold-accent flex items-center justify-center font-headline-sm text-sm tracking-wider">
+              AK
+            </div>
+<div>
+<h4 className="font-headline-sm text-xl text-primary tracking-tight font-medium">Aanya &amp; Kabir's Royal Celebration</h4>
+<p className="text-xs text-outline font-light">December 14, 2025 · The Oberoi Rajvilas, Udaipur</p>
+</div>
+</div>
+<!-- Navigation Tabs -->
+<div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0" id="workspace-tab-group">
+<button className="px-3.5 py-1.5 rounded-full bg-[#0D221A] text-gold-accent border border-gold-accent/40 text-xs uppercase tracking-widest font-semibold transition-all">Overview</button>
+<button className="px-3.5 py-1.5 rounded-full hover:bg-[#FAF6EF] text-on-surface-variant text-xs uppercase tracking-widest transition-colors font-medium">Expenses</button>
+<button className="px-3.5 py-1.5 rounded-full hover:bg-[#FAF6EF] text-on-surface-variant text-xs uppercase tracking-widest transition-colors font-medium">Family Salon</button>
+<button className="px-3.5 py-1.5 rounded-full hover:bg-[#FAF6EF] text-on-surface-variant text-xs uppercase tracking-widest transition-colors font-medium">Invitations</button>
+<button className="px-3.5 py-1.5 rounded-full hover:bg-[#FAF6EF] text-on-surface-variant text-xs uppercase tracking-widest transition-colors font-medium">Guest Registry</button>
+<button className="px-3.5 py-1.5 rounded-full hover:bg-[#FAF6EF] text-on-surface-variant text-xs uppercase tracking-widest transition-colors font-medium">Settings</button>
+</div>
+</div>
+<!-- Dashboard Content Grid -->
+<div className="p-6 md:p-8 space-y-8 bg-[#FAF6EF]">
+<!-- Summary Metrics Cards -->
+<div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+<div className="bg-[#F4EDE0] rounded-xl p-5 border border-gold-accent/30 shadow-xs">
+<p className="text-[10px] uppercase tracking-[0.2em] font-bold text-outline mb-1">Total Celebration Budget</p>
+<p className="font-headline-md text-3xl text-primary font-semibold">₹8,00,000</p>
+<p className="text-xs text-on-surface-variant mt-1.5 font-light">Joint target established by Sharma &amp; Verma families</p>
+</div>
+<div className="bg-[#F4EDE0] rounded-xl p-5 border border-gold-accent/30 shadow-xs">
+<p className="text-[10px] uppercase tracking-[0.2em] font-bold text-outline mb-1">Total Cleared Outlays</p>
+<p className="font-headline-md text-3xl text-primary font-semibold">₹3,25,000</p>
+<p className="text-xs text-secondary mt-1.5 font-medium">40.6% cleared across 14 master artisans</p>
+</div>
+<div className="bg-[#F4EDE0] rounded-xl p-5 border border-gold-accent/30 shadow-xs">
+<p className="text-[10px] uppercase tracking-[0.2em] font-bold text-outline mb-1">Projected Reserve</p>
+<p className="font-headline-md text-3xl text-secondary font-semibold">₹4,75,000</p>
+<p className="text-xs text-on-surface-variant mt-1.5 font-light">Comfortably preserved within auspicious margins</p>
+</div>
+</div>
+<!-- Category Breakdown Pills -->
+<div className="flex items-center gap-2 flex-wrap pt-1">
+<span className="text-[10px] uppercase font-bold tracking-[0.2em] text-outline mr-2">Filter Atelier:</span>
+<span className="px-3 py-1 rounded-full bg-[#0D221A] text-gold-accent text-xs tracking-wider uppercase font-medium cursor-pointer border border-gold-accent/40">All Outlays</span>
+<span className="px-3 py-1 rounded-full bg-[#F0E9DC] hover:border-gold-accent text-primary text-xs tracking-wider uppercase cursor-pointer border border-gold-accent/25 transition-all">Palace &amp; Suites</span>
+<span className="px-3 py-1 rounded-full bg-[#F0E9DC] hover:border-gold-accent text-primary text-xs tracking-wider uppercase cursor-pointer border border-gold-accent/25 transition-all">Heirloom Jewelry</span>
+<span className="px-3 py-1 rounded-full bg-[#F0E9DC] hover:border-gold-accent text-primary text-xs tracking-wider uppercase cursor-pointer border border-gold-accent/25 transition-all">Mandap &amp; Jasmine</span>
+<span className="px-3 py-1 rounded-full bg-[#F0E9DC] hover:border-gold-accent text-primary text-xs tracking-wider uppercase cursor-pointer border border-gold-accent/25 transition-all">Cinematography</span>
+<span className="px-3 py-1 rounded-full bg-[#F0E9DC] hover:border-gold-accent text-primary text-xs tracking-wider uppercase cursor-pointer border border-gold-accent/25 transition-all">Hospitality Concierge</span>
+</div>
+<!-- Two Column Main Workspace Display: Recent Expenses & Task List -->
+<div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Expenses Table -->
+<div className="lg:col-span-8 bg-[#FAF6EF] rounded-xl border border-gold-accent/40 overflow-hidden shadow-xs">
+<div className="px-5 py-4 bg-[#F4EDE0] border-b border-gold-accent/30 flex items-center justify-between">
+<h5 className="font-headline-sm text-lg text-primary font-medium">Recent Ledger Entries &amp; Retainers</h5>
+<a className="text-xs font-semibold text-secondary hover:text-primary tracking-wider uppercase transition-colors" href="#">View all 28 entries</a>
+</div>
+<div className="divide-y divide-gold-accent/20 overflow-x-auto">
+<div className="p-4 flex items-center justify-between hover:bg-[#F4EFE6] transition-colors">
+<div className="min-w-0 pr-4">
+<p className="text-sm font-semibold text-primary">The Oberoi Rajvilas · 1st Retainer</p>
+<p className="text-xs text-outline font-light">Category: Palace &amp; Suites · Settled by Mr. R. Verma</p>
+</div>
+<div className="text-right shrink-0">
+<p className="text-sm font-semibold text-primary">₹2,00,000</p>
+<span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#0D221A] text-gold-accent border border-gold-accent/40">Settled</span>
+</div>
+</div>
+<div className="p-4 flex items-center justify-between hover:bg-[#F4EFE6] transition-colors">
+<div className="min-w-0 pr-4">
+<p className="text-sm font-semibold text-primary">Sabyasachi Bridal Ensemble Retainer</p>
+<p className="text-xs text-outline font-light">Category: Royal Attire · Settled by Mrs. P. Sharma</p>
+</div>
+<div className="text-right shrink-0">
+<p className="text-sm font-semibold text-primary">₹85,000</p>
+<span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#0D221A] text-gold-accent border border-gold-accent/40">Settled</span>
+</div>
+</div>
+<div className="p-4 flex items-center justify-between hover:bg-[#F4EFE6] transition-colors">
+<div className="min-w-0 pr-4">
+<p className="text-sm font-semibold text-primary">Lotus Mandap &amp; Floral Artistry</p>
+<p className="text-xs text-outline font-light">Category: Floral Mandap · Shared 50/50 Dual Approval</p>
+</div>
+<div className="text-right shrink-0">
+<p className="text-sm font-semibold text-primary">₹40,000</p>
+<span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#F4EDE0] text-secondary border border-gold-accent/40">Pending Review</span>
+</div>
+</div>
+<div className="p-4 flex items-center justify-between hover:bg-[#F4EFE6] transition-colors">
+<div className="min-w-0 pr-4">
+<p className="text-sm font-semibold text-primary">Cinematic Film &amp; Drone Master Retainer</p>
+<p className="text-xs text-outline font-light">Category: Cinematography · Shared 50/50</p>
+</div>
+<div className="text-right shrink-0">
+<p className="text-sm font-semibold text-primary">₹60,000</p>
+<span className="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#E7DFCE] text-primary border border-gold-accent/30">Shared 50/50</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Upcoming Task Checklist -->
+<div className="lg:col-span-4 bg-[#F4EDE0] rounded-xl p-5 border border-gold-accent/40">
+<div className="flex items-center justify-between pb-3 border-b border-gold-accent/30 mb-4">
+<h5 className="font-headline-sm text-lg text-primary font-medium">Sacred Milestones</h5>
+<span className="text-[10px] text-secondary font-bold uppercase tracking-widest">3 Awaiting Action</span>
+</div>
+<div className="space-y-3">
+<div className="flex items-start gap-3 p-3 rounded-lg bg-[#FAF6EF] border border-gold-accent/30">
+<div className="w-4 h-4 mt-0.5 rounded border border-gold-accent flex items-center justify-center shrink-0"></div>
+<div>
+<p className="text-xs font-semibold text-primary">Confirm Royal Sangeet Choreographer</p>
+<p className="text-[10px] uppercase tracking-wider text-error font-medium mt-0.5">Due Nov 10 · Verma Family</p>
+</div>
+</div>
+<div className="flex items-start gap-3 p-3 rounded-lg bg-[#FAF6EF] border border-gold-accent/30">
+<div className="w-4 h-4 mt-0.5 rounded border border-gold-accent flex items-center justify-center shrink-0"></div>
+<div>
+<p className="text-xs font-semibold text-primary">Finalize Mehendi Silver Favors</p>
+<p className="text-[10px] uppercase tracking-wider text-secondary font-medium mt-0.5">Due Nov 15 · Sharma Family</p>
+</div>
+</div>
+<div className="flex items-start gap-3 p-3 rounded-lg bg-[#FAF6EF] border border-gold-accent/30">
+<div className="w-4 h-4 mt-0.5 rounded border border-gold-accent flex items-center justify-center shrink-0"></div>
+<div>
+<p className="text-xs font-semibold text-primary">Review Gold Foil Digital Invitation Proof</p>
+<p className="text-[10px] uppercase tracking-wider text-outline font-medium mt-0.5">Due Nov 18 · Aanya &amp; Kabir</p>
+</div>
+</div>
+</div>
+<button className="w-full mt-4 py-2.5 bg-[#FAF6EF] hover:bg-[#E7DFCE] border border-gold-accent/40 text-primary text-xs uppercase tracking-widest font-semibold rounded-lg transition-colors">
+                + Add Ceremony Milestone
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>

@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>
+@layer base{
+  html,body{margin:0;padding:0;background-color:#F7F2E8;}
+  body{overscroll-behavior:none;}
+  main>:first-child{margin-top:0!important;}
+  main>:last-child{margin-bottom:0!important;}
+}
+::-webkit-scrollbar{display:none;}
+.gold-foil-border {
+  border-color: rgba(197, 160, 89, 0.35);
+}
+.gold-glow {
+  box-shadow: 0 10px 30px -10px rgba(197, 160, 89, 0.2), 0 4px 16px -2px rgba(14, 32, 25, 0.06);
+}
+.gold-gradient-text {
+  background: linear-gradient(135deg, #745A27 0%, #C5A059 50%, #947132 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gold-foil-bg {
+  background: linear-gradient(135deg, #DFCA9E 0%, #C5A059 50%, #B89248 100%);
+}
+</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "background": "#F7F2E8",
+          "surface-canvas": "#F4EFE6",
+          "parchment": "#FAF6EF",
+          "parchment-low": "#F0E9DC",
+          "parchment-deep": "#E7DFCE",
+          "primary": "#0D221A",
+          "primary-container": "#173428",
+          "primary-deep": "#081611",
+          "secondary": "#9C7A3C",
+          "gold-accent": "#C5A059",
+          "gold-light": "#E9DAC0",
+          "gold-pale": "#F4EDE0",
+          "on-surface": "#1A1E1C",
+          "on-surface-variant": "#4E5752",
+          "outline": "#857D71",
+          "outline-variant": "rgba(197, 160, 89, 0.3)",
+          "error": "#9B2C2C"
+        },
+        "fontFamily": {
+          "headline-xl": ["Playfair Display", "serif"],
+          "headline-lg": ["Playfair Display", "serif"],
+          "headline-md": ["Playfair Display", "serif"],
+          "headline-sm": ["Playfair Display", "serif"],
+          "cormorant": ["Cormorant Garamond", "serif"],
+          "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+          "body-md": ["Plus Jakarta Sans", "sans-serif"],
+          "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+          "label-lg": ["Plus Jakarta Sans", "sans-serif"],
+          "label-caps": ["Plus Jakarta Sans", "sans-serif"]
+        }
+      }
+    }
+  }</script></head><body class="bg-[#F7F2E8] font-body-md text-body-md text-on-surface antialiased selection:bg-gold-accent/20 selection:text-primary"><header class="fixed top-0 w-full z-50 bg-[#FAF6EF]/90 backdrop-blur-md border-b border-[#C5A059]/25 shadow-[0_2px_15px_rgba(13,34,26,0.03)]"><div class="h-20 w-full max-w-[1360px] mx-auto px-6 md:px-10 lg:px-14 flex items-center justify-between"><div class="flex items-center gap-3.5"><div class="p-1 rounded-full border border-gold-accent/40 bg-[#FAF6EF]"><img alt="Make My Marriage Brandmark" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XBBAqJwHssKQec0nYq_Nxf2fffg8lk1AeeSE5sbmArgEAurRCvMGIGQqKu0rI4rew-as2trq6qm1-GimEAX9KVNLqndlxU2-XM9tccaO8oHDxxnRvglLpo8UZxEY1opH4hRbHeW0kpmN-vrJZMFiWva4BPVaeQd6j1CLjDqenvJpGLaQMGXO2IU0pWIJ9a1Y28ULdt7v0837wSUfiMOsrB7T8ToZmEXAiIiC7E0xbE1JNceJkSiw6RBmM"/></div><a class="font-headline-sm text-xl tracking-tight text-primary font-medium tracking-normal" data-path="home" href="#">Make My Marriage<span class="text-gold-accent text-xs ml-1.5 font-light tracking-widest uppercase">Couture</span></a></div><nav class="hidden md:flex items-center gap-8" data-active-classes="bg-parchment-low text-primary font-semibold rounded"><a class="text-xs uppercase tracking-[0.2em] font-semibold text-on-surface-variant hover:text-gold-accent transition-colors" data-path="features" href="#">Features</a><a class="text-xs uppercase tracking-[0.2em] font-semibold text-on-surface-variant hover:text-gold-accent transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="text-xs uppercase tracking-[0.2em] font-semibold text-on-surface-variant hover:text-gold-accent transition-colors" data-path="invitations" href="#">Invitations</a><a class="inline-flex items-center gap-1.5 px-3 py-1 rounded border border-gold-accent/30 bg-[#F4EDE0]/60 text-xs uppercase tracking-[0.18em] font-semibold text-primary hover:border-gold-accent transition-all group" href="#admin-panel-section"><span class="material-symbols-outlined text-sm text-secondary group-hover:rotate-45 transition-transform">tune</span>Admin Suite<span class="px-1.5 py-0.2 rounded text-[9px] bg-secondary/15 text-secondary tracking-widest font-bold">New</span></a></nav><div class="flex items-center gap-5"><a class="text-xs uppercase tracking-[0.18em] font-semibold text-on-surface-variant hover:text-primary transition-colors" data-path="login" href="#">Log in</a><a class="inline-flex items-center justify-center bg-primary hover:bg-[#16382C] text-[#F7F2E8] border border-gold-accent/40 text-xs uppercase tracking-[0.18em] font-semibold px-6 py-3 rounded-full shadow-[0_4px_16px_rgba(13,34,26,0.22)] transition-all" data-path="start-planning" href="#">Start planning</a><div class="w-8 h-8 rounded-full border border-gold-accent/50 bg-[#0D221A] flex items-center justify-center text-gold-accent"><span class="material-symbols-outlined text-[17px]">person</span></div></div></div></header><main class="w-full pt-20 bg-[#F7F2E8] min-h-screen"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO -->
+<section class="relative w-full overflow-hidden bg-[#F7F2E8] pt-14 pb-24 md:pb-36 border-b border-gold-accent/20">
+<!-- Ambient Royal Radial Glow -->
+<div class="absolute inset-0 pointer-events-none opacity-80" style="background: radial-gradient(ellipse 65% 50% at 50% 10%, rgba(197, 160, 89, 0.15), transparent 75%);"></div>
+<div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#C5A059]/40 to-transparent"></div>
+<div class="w-full max-w-[1360px] mx-auto px-6 md:px-10 lg:px-14 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-y-12 lg:gap-x-12 items-center">
+<!-- Left Editorial Copy -->
+<div class="lg:col-span-6 flex flex-col items-start pr-0 lg:pr-4 z-10">
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#FAF6EF] border border-gold-accent/40 shadow-sm mb-6">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="text-[10px] uppercase font-bold tracking-[0.25em] text-secondary">A Calmer Way to Plan Your Heritage Wedding</span>
+</div>
+<h1 class="font-headline-xl text-5xl md:text-6xl text-primary tracking-tight leading-[1.08] mb-6">
+            Two families.<br/>
+<span class="italic font-cormorant font-normal text-secondary text-5xl md:text-6xl tracking-tight">One beautiful celebration.</span>
+</h1>
+<p class="font-body-lg text-lg text-on-surface-variant max-w-xl mb-9 leading-relaxed font-light">
+            Bring royal outlays, joint family conversations, and bespoke heirloom invitations together in one serene haven. Designed for multi-generational unions where every memory is sacred.
+          </p>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-9">
+<a class="inline-flex items-center justify-center bg-primary hover:bg-[#16382C] text-[#F7F2E8] border border-gold-accent/50 text-xs uppercase tracking-[0.2em] font-semibold px-8 py-4 rounded-full shadow-[0_8px_24px_rgba(13,34,26,0.25)] transition-all" data-path="start-planning" href="#">
+              Start planning
+              <span class="material-symbols-outlined ml-2 text-sm text-gold-accent">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center bg-[#FAF6EF] hover:bg-[#F0E9DC] text-primary border border-gold-accent/40 text-xs uppercase tracking-[0.2em] font-semibold px-8 py-4 rounded-full transition-all shadow-sm" href="#features-overview">
+              Explore features
+            </a>
+</div>
+<div class="flex items-center gap-2.5 text-on-surface-variant border-t border-gold-accent/25 pt-4 w-full max-w-md">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="text-xs uppercase tracking-wider text-outline font-medium">Bespoke concierge coordination for couples &amp; elders</span>
+</div>
+</div>
+<!-- Right Visual Showcase with Floating Card -->
+<div class="lg:col-span-6 relative mt-4 lg:mt-0">
+<div class="relative w-full aspect-[4/3] sm:aspect-[14/11] rounded-2xl overflow-hidden border-2 border-gold-accent/40 shadow-[0_20px_50px_-10px_rgba(13,34,26,0.22)] bg-parchment p-1.5">
+<div class="w-full h-full rounded-xl overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A joyful Indian bride in an ornate emerald green and ivory lehenga and groom in a cream embroidered sherwani smiling lovingly as they walk down a floral-lined wedding aisle with warm golden-hour light and cheering wedding guests." src="https://lh3.googleusercontent.com/aida/AEtjO1UvwN0W5zOtrmOJ-vo6wnt-OSk6Hj6RFagb-UVcpWbtl676cKyX4nfk6JwuAMAPCfkFDcipTiL8V5OaIiZf6IJNwmnWO088zWYLRPiYNnpTSUvo3N7aGQ4NneDj60nIbICF373C7JcqVGYREDk1bPI2G2v_qYEIat-DyTBW5GMKKzmanUXAs9TDtB1sTL6KrSkXro4B6Hv2dvE18qvXSzDBMIid7ySTJzEyNDdoYu1GXDZVhp4f9AwsHxw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute inset-0 border border-gold-accent/30 pointer-events-none rounded-xl"></div>
+</div>
+</div>
+<!-- Floating Live Budget Preview Card -->
+<div class="relative md:absolute md:-bottom-10 md:-left-8 w-full md:w-[360px] mt-6 md:mt-0 bg-[#FAF6EF] rounded-xl p-5 border border-gold-accent/40 shadow-[0_24px_45px_-12px_rgba(13,34,26,0.28)] z-20">
+<div class="flex items-center justify-between pb-3 border-b border-[#E7DFCE]">
+<div class="flex items-center gap-2.5">
+<div class="w-7 h-7 rounded-full bg-[#0D221A] flex items-center justify-center text-gold-accent border border-gold-accent/40">
+<span class="material-symbols-outlined text-sm">account_balance_wallet</span>
+</div>
+<span class="font-headline-sm text-base text-primary font-semibold">Budget Portfolio</span>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#F4EDE0] border border-gold-accent/40 text-secondary text-[10px] font-bold tracking-widest uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+                Live Ledger
+              </span>
+</div>
+<div class="py-3">
+<div class="flex justify-between items-baseline mb-1">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-outline">Spent to Date</span>
+<span class="font-headline-sm text-xl text-primary tracking-tight font-semibold">₹3,25,000 <span class="text-xs text-outline font-normal">/ ₹8,00,000</span></span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-2 rounded-full bg-[#E7DFCE] overflow-hidden flex border border-gold-accent/20">
+<div class="h-full bg-primary" style="width: 40.6%;"></div>
+<div class="h-full bg-gold-accent" style="width: 14%;"></div>
+</div>
+<div class="flex justify-between items-center mt-2 text-on-surface-variant text-xs">
+<span class="text-outline font-light">40.6% allocated</span>
+<span class="font-semibold text-secondary tracking-wide">₹4,75,000 remaining</span>
+</div>
+</div>
+<!-- Ledger Items -->
+<div class="space-y-2 pt-2 border-t border-[#E7DFCE]">
+<div class="flex items-center justify-between text-left p-1.5 rounded hover:bg-[#F4EFE6] transition-colors">
+<div class="min-w-0 pr-2">
+<p class="text-xs text-on-surface truncate font-semibold">Royal Palace Venue Advance</p>
+<p class="text-[10px] uppercase tracking-wider text-outline">Paid · Groom's Family</p>
+</div>
+<span class="text-xs font-semibold text-primary whitespace-nowrap">₹2,00,000</span>
+</div>
+<div class="flex items-center justify-between text-left p-1.5 rounded hover:bg-[#F4EFE6] transition-colors">
+<div class="min-w-0 pr-2">
+<p class="text-xs text-on-surface truncate font-semibold">Couture Lehenga &amp; Sherwani</p>
+<p class="text-[10px] uppercase tracking-wider text-outline">Paid · Bride's Family</p>
+</div>
+<span class="text-xs font-semibold text-primary whitespace-nowrap">₹85,000</span>
+</div>
+<div class="flex items-center justify-between text-left p-1.5 rounded hover:bg-[#F4EFE6] transition-colors">
+<div class="min-w-0 pr-2">
+<p class="text-xs text-on-surface truncate font-semibold">Floral Mandap Decorator</p>
+<p class="text-[10px] uppercase tracking-wider text-secondary">Shared 50/50 · In Review</p>
+</div>
+<span class="text-xs font-semibold text-primary whitespace-nowrap">₹40,000</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: VALUE PROPOSITION STRIP -->
+<section class="w-full max-w-[1360px] mx-auto px-6 md:px-10 lg:px-14 -mt-8 md:-mt-12 mb-20 z-30 relative">
+<div class="bg-[#FAF6EF] rounded-2xl border border-gold-accent/40 p-6 md:p-8 shadow-[0_12px_36px_rgba(13,34,26,0.06)] relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-gold-accent/5 pointer-events-none"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:divide-x md:divide-gold-accent/30">
+<!-- Column 1 -->
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-[#F0E9DC] flex items-center justify-center shrink-0 border border-gold-accent/40 text-secondary">
+<span class="material-symbols-outlined text-2xl">account_balance</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-lg text-primary mb-1">Every expense in harmony</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed font-light">
+              Transparent vendor retainers, parent allocations, and balanced budgets without spreadsheet confusion.
+            </p>
+</div>
+</div>
+<!-- Column 2 -->
+<div class="flex items-start gap-4 md:pl-8">
+<div class="w-12 h-12 rounded-xl bg-[#0D221A] flex items-center justify-center shrink-0 border border-gold-accent/40 text-gold-accent">
+<span class="material-symbols-outlined text-2xl">family_restroom</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-lg text-primary mb-1">Both families in cadence</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed font-light">
+              Clear milestone updates, discreet side-notes, and unified decision logs honoring mutual traditions.
+            </p>
+</div>
+</div>
+<!-- Column 3 -->
+<div class="flex items-start gap-4 md:pl-8">
+<div class="w-12 h-12 rounded-xl bg-[#F0E9DC] flex items-center justify-center shrink-0 border border-gold-accent/40 text-secondary">
+<span class="material-symbols-outlined text-2xl">drafts</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-lg text-primary mb-1">Invitations worth cherishing</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed font-light">
+              Bespoke gilded digital stationery delivered privately with instant RSVP RSVP concierge tracking.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: FEATURES GRID -->
+<section class="w-full py-16 bg-[#F4EFE6] border-t border-b border-gold-accent/25" id="features-overview">
+<div class="w-full max-w-[1360px] mx-auto px-6 md:px-10 lg:px-14">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 mb-3">
+<span class="w-8 h-px bg-gold-accent"></span>
+<span class="text-[10px] uppercase font-bold tracking-[0.25em] text-secondary">Curated Atelier Modules</span>
+<span class="w-8 h-px bg-gold-accent"></span>
+</div>
+<h2 class="font-headline-lg text-3xl md:text-4xl text-primary mt-1 mb-4 tracking-tight">
+          The planning feels effortless when every ritual is honored.
+        </h2>
+<p class="text-base text-on-surface-variant font-light">
+          From the earliest auspicious date discussions to the final guest farewell, coordinate every milestone with poise.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Feature 1: Wedding Expenses -->
+<div class="bg-[#FAF6EF] rounded-2xl border border-gold-accent/40 p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-gold-accent/5 rounded-bl-full pointer-events-none"></div>
+<div>
+<div class="w-11 h-11 rounded-lg bg-[#0D221A] border border-gold-accent/40 flex items-center justify-center mb-5 text-gold-accent">
+<span class="material-symbols-outlined text-xl">pie_chart</span>
+</div>
+<h3 class="font-headline-sm text-2xl text-primary mb-2">Royal Wedding Outlays</h3>
+<p class="text-sm text-on-surface-variant mb-6 font-light leading-relaxed">
+              Track vendor deposits, parent contributions, and dual-family allocations without awkward financial conversations.
+            </p>
+</div>
+<!-- Micro Spend Breakdown UI -->
+<div class="bg-[#F4EDE0] rounded-xl p-5 border border-gold-accent/30">
+<div class="flex justify-between items-center mb-3">
+<span class="text-[10px] uppercase tracking-[0.2em] font-bold text-outline">Major Allocations</span>
+<span class="text-xs text-primary font-semibold">₹6,80,000 committed</span>
+</div>
+<div class="h-2 rounded-full bg-[#E2D8C7] flex overflow-hidden mb-4 border border-gold-accent/20">
+<div class="h-full bg-primary" style="width: 45%;"></div>
+<div class="h-full bg-secondary" style="width: 25%;"></div>
+<div class="h-full bg-gold-accent" style="width: 18%;"></div>
+<div class="h-full bg-outline" style="width: 12%;"></div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-xs text-on-surface font-medium">Palace (45%)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-xs text-on-surface font-medium">Banquet (25%)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-gold-accent"></span>
+<span class="text-xs text-on-surface font-medium">Mandap (18%)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="text-xs text-on-surface font-medium">Flora (12%)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Feature 2: Family Conversations -->
+<div class="bg-[#FAF6EF] rounded-2xl border border-gold-accent/40 p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-gold-accent/5 rounded-bl-full pointer-events-none"></div>
+<div>
+<div class="w-11 h-11 rounded-lg bg-[#0D221A] border border-gold-accent/40 flex items-center justify-center mb-5 text-gold-accent">
+<span class="material-symbols-outlined text-xl">forum</span>
+</div>
+<h3 class="font-headline-sm text-2xl text-primary mb-2">Family Chambers &amp; Dialogue</h3>
+<p class="text-sm text-on-surface-variant mb-6 font-light leading-relaxed">
+              Keep planning updates and delicate decisions in one shared salon for both sides, preserving warmth, respect, and grace.
+            </p>
+</div>
+<!-- Micro Chat Snippet -->
+<div class="bg-[#F4EDE0] rounded-xl p-4 border border-gold-accent/30 space-y-3">
+<div class="flex items-start gap-2.5">
+<div class="w-7 h-7 rounded-full bg-[#0D221A] text-gold-accent border border-gold-accent/40 flex items-center justify-center text-xs font-serif font-bold">S</div>
+<div class="bg-[#FAF6EF] p-3 rounded-lg rounded-tl-none border border-gold-accent/30 max-w-[85%] shadow-xs">
+<p class="text-[9px] uppercase tracking-wider text-secondary font-bold mb-0.5">Sharma Family (Bride's Chamber)</p>
+<p class="text-xs text-on-surface font-normal">Catering tasting for the Rajasthani Royal Thali confirmed for this Sunday afternoon?</p>
+</div>
+</div>
+<div class="flex items-start gap-2.5 justify-end">
+<div class="bg-[#0D221A] text-[#FAF6EF] p-3 rounded-lg rounded-tr-none max-w-[85%] border border-gold-accent/30">
+<p class="text-[9px] uppercase tracking-wider text-gold-accent font-bold mb-0.5">Verma Family (Groom's Chamber)</p>
+<p class="text-xs text-[#F7F2E8] font-normal">Splendid. Kabir uploaded the Sangeet musical curation in the workspace files as well.</p>
+</div>
+<div class="w-7 h-7 rounded-full bg-secondary text-[#FAF6EF] border border-gold-accent/40 flex items-center justify-center text-xs font-serif font-bold">V</div>
+</div>
+</div>
+</div>
+<!-- Feature 3: Digital Invitations -->
+<div class="bg-[#FAF6EF] rounded-2xl border border-gold-accent/40 p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-gold-accent/5 rounded-bl-full pointer-events-none"></div>
+<div>
+<div class="w-11 h-11 rounded-lg bg-[#0D221A] border border-gold-accent/40 flex items-center justify-center mb-5 text-gold-accent">
+<span class="material-symbols-outlined text-xl">mark_email_read</span>
+</div>
+<h3 class="font-headline-sm text-2xl text-primary mb-2">Bespoke Digital Invitations</h3>
+<p class="text-sm text-on-surface-variant mb-6 font-light leading-relaxed">
+              Design an heirloom digital stationery suite delivered through a private link, complete with interactive schedules and dietary RSVPs.
+            </p>
+</div>
+<!-- RSVP Tracker Tag Preview -->
+<div class="bg-[#F4EDE0] rounded-xl p-4 border border-gold-accent/30 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-[#FAF6EF] border border-gold-accent/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl">mail</span>
+</div>
+<div>
+<p class="text-xs font-semibold text-primary">makemymarriage.com/aanya-kabir</p>
+<p class="text-[11px] text-outline font-light">420 Delivered · 98% VIP Opened</p>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-[#0D221A] text-gold-accent border border-gold-accent/30 text-xs font-medium">
+<span class="material-symbols-outlined text-xs">done_all</span>
+                342 Confirmed
+              </span>
+</div>
+</div>
+</div>
+<!-- Feature 4: Admin Panel & Brand Styling Suite -->
+<div class="bg-[#FAF6EF] rounded-2xl border border-gold-accent/40 p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-gold-accent/5 rounded-bl-full pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-5">
+<div class="w-11 h-11 rounded-lg bg-[#0D221A] border border-gold-accent/40 flex items-center justify-center text-gold-accent">
+<span class="material-symbols-outlined text-xl">admin_panel_settings</span>
+</div>
+<span class="text-[9px] px-2.5 py-0.5 rounded-full bg-[#F0E9DC] border border-gold-accent/40 text-secondary uppercase tracking-widest font-bold">Admin Suite</span>
+</div>
+<h3 class="font-headline-sm text-2xl text-primary mb-2">Admin Panel &amp; Heritage Studio</h3>
+<p class="text-sm text-on-surface-variant mb-6 font-light leading-relaxed">
+              Comprehensive controls for royal family branding, crest monograms, bespoke royal palettes, typography, and guest access privacy.
+            </p>
+</div>
+<div class="bg-[#F4EDE0] rounded-xl p-4 border border-gold-accent/30 space-y-3">
+<div class="flex flex-wrap items-center justify-between gap-2 pb-2.5 border-b border-gold-accent/20">
+<div class="flex items-center gap-2">
+<span class="text-[10px] uppercase font-bold tracking-wider text-outline">Active Palette:</span>
+<div class="flex items-center gap-1.5">
+<span class="w-4 h-4 rounded-full bg-[#0D221A] ring-2 ring-gold-accent ring-offset-1"></span>
+<span class="w-4 h-4 rounded-full bg-[#C5A059]"></span>
+<span class="w-4 h-4 rounded-full bg-[#FAF6EF] border border-gold-accent/40"></span>
+<span class="w-4 h-4 rounded-full bg-[#521C27]"></span>
+</div>
+</div>
+<span class="text-[10px] text-secondary font-bold tracking-wider uppercase">Emerald &amp; Champagne</span>
+</div>
+<div class="flex items-center justify-between text-xs text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-base">verified_user</span>
+<span class="text-[11px] font-light">Dual Host Authority Active</span>
+</div>
+<a class="text-secondary font-semibold hover:text-primary inline-flex items-center gap-0.5 text-xs tracking-wider uppercase transition-colors" href="#admin-panel-section">
+                Open Admin <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: PRODUCT PREVIEW (WORKSPACE DEMO) -->
+<section class="w-full py-20 bg-[#F7F2E8]">
+<div class="w-full max-w-[1360px] mx-auto px-6 md:px-10 lg:px-14">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<div class="inline-flex items-center gap-2 mb-3">
+<span class="w-8 h-px bg-gold-accent"></span>
+<span class="text-[10px] uppercase font-bold tracking-[0.25em] text-secondary">The Digital Concierge</span>
+<span class="w-8 h-px bg-gold-accent"></span>
+</div>
+<h2 class="font-headline-lg text-3xl md:text-4xl text-primary mt-1 mb-3">A workspace that brings serenity to scale</h2>
+<p class="text-base text-on-surface-variant font-light">Experience how effortless royal cross-family coordination feels inside your personalized salon.</p>
+</div>
+<!-- Main Workspace Glass Card -->
+<div class="bg-[#FAF6EF] rounded-2xl border-2 border-gold-accent/40 shadow-[0_24px_60px_-15px_rgba(13,34,26,0.12)] overflow-hidden">
+<!-- Workspace Header Bar -->
+<div class="bg-[#F0E9DC] border-b border-gold-accent/30 px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-full border-2 border-gold-accent/60 bg-[#0D221A] text-gold-accent flex items-center justify-center font-headline-sm text-sm tracking-wider">
+              AK
+            </div>
+<div>
+<h4 class="font-headline-sm text-xl text-primary tracking-tight font-medium">Aanya &amp; Kabir's Royal Celebration</h4>
+<p class="text-xs text-outline font-light">December 14, 2025 · The Oberoi Rajvilas, Udaipur</p>
+</div>
+</div>
+<!-- Navigation Tabs -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0" id="workspace-tab-group">
+<button class="px-3.5 py-1.5 rounded-full bg-[#0D221A] text-gold-accent border border-gold-accent/40 text-xs uppercase tracking-widest font-semibold transition-all">Overview</button>
+<button class="px-3.5 py-1.5 rounded-full hover:bg-[#FAF6EF] text-on-surface-variant text-xs uppercase tracking-widest transition-colors font-medium">Expenses</button>
+<button class="px-3.5 py-1.5 rounded-full hover:bg-[#FAF6EF] text-on-surface-variant text-xs uppercase tracking-widest transition-colors font-medium">Family Salon</button>
+<button class="px-3.5 py-1.5 rounded-full hover:bg-[#FAF6EF] text-on-surface-variant text-xs uppercase tracking-widest transition-colors font-medium">Invitations</button>
+<button class="px-3.5 py-1.5 rounded-full hover:bg-[#FAF6EF] text-on-surface-variant text-xs uppercase tracking-widest transition-colors font-medium">Guest Registry</button>
+<button class="px-3.5 py-1.5 rounded-full hover:bg-[#FAF6EF] text-on-surface-variant text-xs uppercase tracking-widest transition-colors font-medium">Settings</button>
+</div>
+</div>
+<!-- Dashboard Content Grid -->
+<div class="p-6 md:p-8 space-y-8 bg-[#FAF6EF]">
+<!-- Summary Metrics Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<div class="bg-[#F4EDE0] rounded-xl p-5 border border-gold-accent/30 shadow-xs">
+<p class="text-[10px] uppercase tracking-[0.2em] font-bold text-outline mb-1">Total Celebration Budget</p>
+<p class="font-headline-md text-3xl text-primary font-semibold">₹8,00,000</p>
+<p class="text-xs text-on-surface-variant mt-1.5 font-light">Joint target established by Sharma &amp; Verma families</p>
+</div>
+<div class="bg-[#F4EDE0] rounded-xl p-5 border border-gold-accent/30 shadow-xs">
+<p class="text-[10px] uppercase tracking-[0.2em] font-bold text-outline mb-1">Total Cleared Outlays</p>
+<p class="font-headline-md text-3xl text-primary font-semibold">₹3,25,000</p>
+<p class="text-xs text-secondary mt-1.5 font-medium">40.6% cleared across 14 master artisans</p>
+</div>
+<div class="bg-[#F4EDE0] rounded-xl p-5 border border-gold-accent/30 shadow-xs">
+<p class="text-[10px] uppercase tracking-[0.2em] font-bold text-outline mb-1">Projected Reserve</p>
+<p class="font-headline-md text-3xl text-secondary font-semibold">₹4,75,000</p>
+<p class="text-xs text-on-surface-variant mt-1.5 font-light">Comfortably preserved within auspicious margins</p>
+</div>
+</div>
+<!-- Category Breakdown Pills -->
+<div class="flex items-center gap-2 flex-wrap pt-1">
+<span class="text-[10px] uppercase font-bold tracking-[0.2em] text-outline mr-2">Filter Atelier:</span>
+<span class="px-3 py-1 rounded-full bg-[#0D221A] text-gold-accent text-xs tracking-wider uppercase font-medium cursor-pointer border border-gold-accent/40">All Outlays</span>
+<span class="px-3 py-1 rounded-full bg-[#F0E9DC] hover:border-gold-accent text-primary text-xs tracking-wider uppercase cursor-pointer border border-gold-accent/25 transition-all">Palace &amp; Suites</span>
+<span class="px-3 py-1 rounded-full bg-[#F0E9DC] hover:border-gold-accent text-primary text-xs tracking-wider uppercase cursor-pointer border border-gold-accent/25 transition-all">Heirloom Jewelry</span>
+<span class="px-3 py-1 rounded-full bg-[#F0E9DC] hover:border-gold-accent text-primary text-xs tracking-wider uppercase cursor-pointer border border-gold-accent/25 transition-all">Mandap &amp; Jasmine</span>
+<span class="px-3 py-1 rounded-full bg-[#F0E9DC] hover:border-gold-accent text-primary text-xs tracking-wider uppercase cursor-pointer border border-gold-accent/25 transition-all">Cinematography</span>
+<span class="px-3 py-1 rounded-full bg-[#F0E9DC] hover:border-gold-accent text-primary text-xs tracking-wider uppercase cursor-pointer border border-gold-accent/25 transition-all">Hospitality Concierge</span>
+</div>
+<!-- Two Column Main Workspace Display: Recent Expenses & Task List -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Expenses Table -->
+<div class="lg:col-span-8 bg-[#FAF6EF] rounded-xl border border-gold-accent/40 overflow-hidden shadow-xs">
+<div class="px-5 py-4 bg-[#F4EDE0] border-b border-gold-accent/30 flex items-center justify-between">
+<h5 class="font-headline-sm text-lg text-primary font-medium">Recent Ledger Entries &amp; Retainers</h5>
+<a class="text-xs font-semibold text-secondary hover:text-primary tracking-wider uppercase transition-colors" href="#">View all 28 entries</a>
+</div>
+<div class="divide-y divide-gold-accent/20 overflow-x-auto">
+<div class="p-4 flex items-center justify-between hover:bg-[#F4EFE6] transition-colors">
+<div class="min-w-0 pr-4">
+<p class="text-sm font-semibold text-primary">The Oberoi Rajvilas · 1st Retainer</p>
+<p class="text-xs text-outline font-light">Category: Palace &amp; Suites · Settled by Mr. R. Verma</p>
+</div>
+<div class="text-right shrink-0">
+<p class="text-sm font-semibold text-primary">₹2,00,000</p>
+<span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#0D221A] text-gold-accent border border-gold-accent/40">Settled</span>
+</div>
+</div>
+<div class="p-4 flex items-center justify-between hover:bg-[#F4EFE6] transition-colors">
+<div class="min-w-0 pr-4">
+<p class="text-sm font-semibold text-primary">Sabyasachi Bridal Ensemble Retainer</p>
+<p class="text-xs text-outline font-light">Category: Royal Attire · Settled by Mrs. P. Sharma</p>
+</div>
+<div class="text-right shrink-0">
+<p class="text-sm font-semibold text-primary">₹85,000</p>
+<span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#0D221A] text-gold-accent border border-gold-accent/40">Settled</span>
+</div>
+</div>
+<div class="p-4 flex items-center justify-between hover:bg-[#F4EFE6] transition-colors">
+<div class="min-w-0 pr-4">
+<p class="text-sm font-semibold text-primary">Lotus Mandap &amp; Floral Artistry</p>
+<p class="text-xs text-outline font-light">Category: Floral Mandap · Shared 50/50 Dual Approval</p>
+</div>
+<div class="text-right shrink-0">
+<p class="text-sm font-semibold text-primary">₹40,000</p>
+<span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#F4EDE0] text-secondary border border-gold-accent/40">Pending Review</span>
+</div>
+</div>
+<div class="p-4 flex items-center justify-between hover:bg-[#F4EFE6] transition-colors">
+<div class="min-w-0 pr-4">
+<p class="text-sm font-semibold text-primary">Cinematic Film &amp; Drone Master Retainer</p>
+<p class="text-xs text-outline font-light">Category: Cinematography · Shared 50/50</p>
+</div>
+<div class="text-right shrink-0">
+<p class="text-sm font-semibold text-primary">₹60,000</p>
+<span class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-[#E7DFCE] text-primary border border-gold-accent/30">Shared 50/50</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Upcoming Task Checklist -->
+<div class="lg:col-span-4 bg-[#F4EDE0] rounded-xl p-5 border border-gold-accent/40">
+<div class="flex items-center justify-between pb-3 border-b border-gold-accent/30 mb-4">
+<h5 class="font-headline-sm text-lg text-primary font-medium">Sacred Milestones</h5>
+<span class="text-[10px] text-secondary font-bold uppercase tracking-widest">3 Awaiting Action</span>
+</div>
+<div class="space-y-3">
+<div class="flex items-start gap-3 p-3 rounded-lg bg-[#FAF6EF] border border-gold-accent/30">
+<div class="w-4 h-4 mt-0.5 rounded border border-gold-accent flex items-center justify-center shrink-0"></div>
+<div>
+<p class="text-xs font-semibold text-primary">Confirm Royal Sangeet Choreographer</p>
+<p class="text-[10px] uppercase tracking-wider text-error font-medium mt-0.5">Due Nov 10 · Verma Family</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-lg bg-[#FAF6EF] border border-gold-accent/30">
+<div class="w-4 h-4 mt-0.5 rounded border border-gold-accent flex items-center justify-center shrink-0"></div>
+<div>
+<p class="text-xs font-semibold text-primary">Finalize Mehendi Silver Favors</p>
+<p class="text-[10px] uppercase tracking-wider text-secondary font-medium mt-0.5">Due Nov 15 · Sharma Family</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-3 rounded-lg bg-[#FAF6EF] border border-gold-accent/30">
+<div class="w-4 h-4 mt-0.5 rounded border border-gold-accent flex items-center justify-center shrink-0"></div>
+<div>
+<p class="text-xs font-semibold text-primary">Review Gold Foil Digital Invitation Proof</p>
+<p class="text-[10px] uppercase tracking-wider text-outline font-medium mt-0.5">Due Nov 18 · Aanya &amp; Kabir</p>
+</div>
+</div>
+</div>
+<button class="w-full mt-4 py-2.5 bg-[#FAF6EF] hover:bg-[#E7DFCE] border border-gold-accent/40 text-primary text-xs uppercase tracking-widest font-semibold rounded-lg transition-colors">
+                + Add Ceremony Milestone
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION: ADMIN PANEL & BRAND STYLING (COUTURE SUITE) -->
+<section class="w-full py-20 bg-[#F4EFE6] border-t border-b border-gold-accent/30 relative" id="admin-panel-section">
+<div class="w-full max-w-[1360px] mx-auto px-6 md:px-10 lg:px-14">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FAF6EF] border border-gold-accent/50 mb-3 shadow-xs">
+<span class="material-symbols-outlined text-secondary text-base">shield_with_heart</span>
+<span class="text-[10px] uppercase font-bold tracking-[0.25em] text-secondary">Royal Administration Suite</span>
+</div>
+<h2 class="font-headline-lg text-3xl md:text-4xl text-primary mb-3">Wedding Settings &amp; Brand Studio</h2>
+<p class="text-base text-on-surface-variant font-light">Curate bride &amp; groom family branding, heraldic crest monograms, royal foil palettes, and invitation privacy with bespoke fidelity.</p>
+</div>
+<div class="bg-[#FAF6EF] rounded-2xl border-2 border-gold-accent/40 shadow-[0_24px_60px_-15px_rgba(13,34,26,0.15)] overflow-hidden">
+<!-- Header Bar -->
+<div class="bg-[#F0E9DC] border-b border-gold-accent/30 px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-[#0D221A] text-gold-accent border border-gold-accent/50 flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">settings_suggest</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-lg text-primary font-semibold">Imperial Atelier Controls</h3>
+<span class="px-2.5 py-0.5 rounded-full bg-[#0D221A] text-gold-accent text-[9px] uppercase tracking-widest font-bold border border-gold-accent/30">Live Studio</span>
+</div>
+<p class="text-xs text-outline font-light">Sharma &amp; Verma Union · Udaipur Celebration 2025</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-4 py-2 rounded-full border border-gold-accent/40 bg-[#FAF6EF] hover:bg-[#E7DFCE] text-primary text-xs uppercase tracking-widest font-semibold transition-colors" id="admin-reset-btn">Reset Defaults</button>
+<button class="px-5 py-2 rounded-full bg-[#0D221A] hover:bg-[#16382C] text-gold-accent border border-gold-accent/50 text-xs uppercase tracking-widest font-semibold shadow-sm transition-all inline-flex items-center gap-1.5" id="admin-save-toast-btn"><span class="material-symbols-outlined text-sm">check_circle</span>Save Changes</button>
+</div>
+</div>
+<div class="p-6 md:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left: Settings Controls -->
+<div class="lg:col-span-7 space-y-6">
+<!-- Color Palette Selector -->
+<div class="bg-[#F4EDE0] rounded-xl border border-gold-accent/40 p-5 shadow-xs">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">palette</span>
+<h4 class="font-headline-sm text-base text-primary font-semibold">Couture Color Palette</h4>
+</div>
+<span class="text-[10px] text-secondary font-bold uppercase tracking-widest" id="active-palette-name">Emerald &amp; Champagne Gold</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3" id="palette-selector-group">
+<button class="palette-btn p-3 rounded-xl border-2 border-primary bg-[#FAF6EF] text-left transition-all shadow-xs" data-palette="emerald" type="button">
+<div class="flex items-center gap-1.5 mb-2">
+<span class="w-4 h-4 rounded-full bg-[#0D221A]"></span>
+<span class="w-4 h-4 rounded-full bg-[#C5A059]"></span>
+<span class="w-4 h-4 rounded-full bg-[#FAF6EF] border border-gold-accent/40"></span>
+</div>
+<p class="text-xs font-semibold text-primary">Emerald &amp; Gold</p>
+<p class="text-[10px] text-outline font-light">Imperial Sovereign</p>
+</button>
+<button class="palette-btn p-3 rounded-xl border border-gold-accent/40 bg-[#FAF6EF] hover:border-gold-accent text-left transition-all" data-palette="ivory" type="button">
+<div class="flex items-center gap-1.5 mb-2">
+<span class="w-4 h-4 rounded-full bg-[#FAF6EF] border border-gold-accent/40"></span>
+<span class="w-4 h-4 rounded-full bg-[#C5A059]"></span>
+<span class="w-4 h-4 rounded-full bg-[#745A27]"></span>
+</div>
+<p class="text-xs font-semibold text-primary">Heritage Ivory</p>
+<p class="text-[10px] text-outline font-light">Cotton Rag &amp; Gold</p>
+</button>
+<button class="palette-btn p-3 rounded-xl border border-gold-accent/40 bg-[#FAF6EF] hover:border-gold-accent text-left transition-all" data-palette="ruby" type="button">
+<div class="flex items-center gap-1.5 mb-2">
+<span class="w-4 h-4 rounded-full bg-[#4A1521]"></span>
+<span class="w-4 h-4 rounded-full bg-[#E4C284]"></span>
+<span class="w-4 h-4 rounded-full bg-[#FAF6EF] border border-gold-accent/40"></span>
+</div>
+<p class="text-xs font-semibold text-primary">Royal Ruby</p>
+<p class="text-[10px] text-outline font-light">Velvet Twilight</p>
+</button>
+</div>
+</div>
+<!-- Crest & Monogram Customizer -->
+<div class="bg-[#F4EDE0] rounded-xl border border-gold-accent/40 p-5 shadow-xs">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">token</span>
+<h4 class="font-headline-sm text-base text-primary font-semibold">Heraldic Monogram Crest</h4>
+</div>
+<span class="text-[10px] text-outline uppercase font-bold tracking-widest">Vector Emboss</span>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4 p-4 rounded-lg bg-[#FAF6EF] border border-dashed border-gold-accent/50">
+<div class="w-16 h-16 rounded-full border-2 border-gold-accent bg-[#0D221A] text-gold-accent flex items-center justify-center font-headline-sm text-base shadow-sm shrink-0" id="crest-monogram-box">A&amp;K</div>
+<div class="flex-1 text-center sm:text-left">
+<p class="text-xs font-semibold text-primary mb-1">Joint Royal Union Crest</p>
+<p class="text-xs text-on-surface-variant mb-2 font-light">Select insignia style or imprint bespoke monogram across invitation wax seals.</p>
+<div class="flex flex-wrap gap-2 justify-center sm:justify-start">
+<button class="crest-toggle-btn px-3 py-1 rounded-full bg-[#0D221A] text-gold-accent border border-gold-accent/50 text-[11px] font-semibold tracking-wider uppercase" data-initials="A&amp;K" type="button">A&amp;K Classic</button>
+<button class="crest-toggle-btn px-3 py-1 rounded-full bg-[#FAF6EF] hover:bg-[#E7DFCE] border border-gold-accent/40 text-primary text-[11px] font-semibold tracking-wider uppercase" data-initials="S ❦ V" type="button">S ❦ V Families</button>
+<button class="crest-toggle-btn px-3 py-1 rounded-full bg-[#FAF6EF] hover:bg-[#E7DFCE] border border-gold-accent/40 text-primary text-[11px] font-semibold tracking-wider uppercase" data-initials="∞" type="button">Eternal Knot</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Privacy & Host Controls -->
+<div class="bg-[#F4EDE0] rounded-xl border border-gold-accent/40 p-5 shadow-xs">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">lock_person</span>
+<h4 class="font-headline-sm text-base text-primary font-semibold">Co-Hosting &amp; Privacy Protocols</h4>
+</div>
+<span class="text-[10px] text-secondary font-bold uppercase tracking-widest">Dual Admin</span>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between p-3 rounded-lg bg-[#FAF6EF] border border-gold-accent/25">
+<div class="pr-4">
+<p class="text-xs font-semibold text-primary">Sharma &amp; Verma Mutual Approval</p>
+<p class="text-[11px] text-on-surface-variant font-light">Expenditures above ₹50,000 require concurrent sign-off from both family patriarchs.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer admin-permission-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-[#C5A059]/30 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#0D221A]"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-[#FAF6EF] border border-gold-accent/25">
+<div class="pr-4">
+<p class="text-xs font-semibold text-primary">VIP Passcode Protection for Venues</p>
+<p class="text-[11px] text-on-surface-variant font-light">Restricted access requiring guest mobile pin prior to unveiling palace map coordinates.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer admin-permission-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-[#C5A059]/30 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#0D221A]"></div>
+</label>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Live Stationery Preview -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="bg-[#F0E9DC] rounded-xl border border-gold-accent/40 p-5 flex-1 flex flex-col justify-between shadow-xs">
+<div class="flex items-center justify-between pb-3 border-b border-gold-accent/30 mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">preview</span>
+<h4 class="font-headline-sm text-base text-primary font-semibold">Live Stationery Preview</h4>
+</div>
+<span class="text-[9px] text-primary font-bold uppercase tracking-[0.2em]">Synchronized</span>
+</div>
+<div class="w-full aspect-[3/4] max-w-[320px] mx-auto rounded-xl p-6 bg-[#0D221A] text-[#FAF6EF] border-2 border-gold-accent shadow-[0_16px_45px_rgba(13,34,26,0.3)] flex flex-col items-center justify-between relative transition-all duration-300" id="admin-live-invitation-card">
+<!-- Fine gold inner filigree frame -->
+<div class="absolute inset-2.5 border border-gold-accent/50 pointer-events-none rounded"></div>
+<div class="absolute inset-3 border border-gold-accent/20 pointer-events-none rounded"></div>
+<div class="pt-2 text-center">
+<span class="text-[9px] text-gold-accent uppercase tracking-[0.25em] font-medium" id="live-card-badge">Sacred Nuptials &amp; Reception</span>
+<h4 class="font-headline-md text-2xl text-gold-accent mt-1 tracking-normal font-normal" id="live-card-title">Kabir &amp; Aanya</h4>
+</div>
+<div class="my-auto py-2 text-center">
+<div class="w-12 h-12 rounded-full border border-gold-accent mx-auto flex items-center justify-center font-headline-sm text-sm text-gold-accent mb-2.5 shadow-sm" id="live-card-crest">A&amp;K</div>
+<p class="text-xs text-gold-light italic font-cormorant font-light text-base" id="live-card-quote">Two families united in eternal grace</p>
+<p class="text-[10px] text-[#FAF6EF] mt-1.5 tracking-[0.25em] font-semibold uppercase" id="live-card-venue">THE OBEROI RAJVILAS · UDAIPUR</p>
+</div>
+<div class="w-full pt-3 border-t border-gold-accent/30 text-center">
+<span class="text-[9px] text-gold-accent uppercase tracking-[0.2em] font-medium" id="live-card-footer">Private RSVP Code · Dec 14, 2025</span>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-gold-accent/30 flex items-center justify-between text-xs text-on-surface-variant">
+<span class="font-light">Changes immediately reflect in guest invitations</span>
+<span class="font-semibold text-secondary flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>Concierge Active</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: HOW IT WORKS -->
+<section class="w-full py-20 bg-[#F7F2E8]">
+<div class="w-full max-w-[1360px] mx-auto px-6 md:px-10 lg:px-14">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 mb-3">
+<span class="w-8 h-px bg-gold-accent"></span>
+<span class="text-[10px] uppercase font-bold tracking-[0.25em] text-secondary">The Royal Atelier Journey</span>
+<span class="w-8 h-px bg-gold-accent"></span>
+</div>
+<h2 class="font-headline-lg text-3xl md:text-4xl text-primary mt-1 mb-3">Three serene steps to bring both families in unison</h2>
+<p class="text-base text-on-surface-variant font-light">Thoughtfully crafted for couples and revered multi-generational households.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+<!-- Step 1 -->
+<div class="bg-[#FAF6EF] rounded-2xl border border-gold-accent/40 p-8 shadow-sm flex flex-col justify-between relative group hover:border-gold-accent transition-colors">
+<div class="absolute top-4 right-6 text-4xl font-serif text-gold-accent/25 font-light">01</div>
+<div>
+<span class="text-[10px] uppercase font-bold tracking-[0.2em] text-secondary">Initiation</span>
+<h3 class="font-headline-sm text-xl text-primary mt-1 mb-3">Create your celebration salon</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed font-light">
+              Enter auspicious ceremony dates, approximate royal guest counts, and joint budget targets in minutes. The system drafts your multi-day ritual template automatically.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-gold-accent/25 flex items-center text-secondary text-xs uppercase tracking-wider font-semibold">
+<span>Setup takes under 2 minutes</span>
+<span class="material-symbols-outlined ml-1.5 text-sm">schedule</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-[#FAF6EF] rounded-2xl border border-gold-accent/40 p-8 shadow-sm flex flex-col justify-between relative group hover:border-gold-accent transition-colors">
+<div class="absolute top-4 right-6 text-4xl font-serif text-gold-accent/25 font-light">02</div>
+<div>
+<span class="text-[10px] uppercase font-bold tracking-[0.2em] text-secondary">Kinship</span>
+<h3 class="font-headline-sm text-xl text-primary mt-1 mb-3">Welcome key elders &amp; planners</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed font-light">
+              Invite parents, siblings, and key family confidants with bespoke permission tiers, ensuring complete dignity and comfort across both households.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-gold-accent/25 flex items-center text-secondary text-xs uppercase tracking-wider font-semibold">
+<span>Granular privacy &amp; permissions</span>
+<span class="material-symbols-outlined ml-1.5 text-sm">verified_user</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-[#FAF6EF] rounded-2xl border border-gold-accent/40 p-8 shadow-sm flex flex-col justify-between relative group hover:border-gold-accent transition-colors">
+<div class="absolute top-4 right-6 text-4xl font-serif text-gold-accent/25 font-light">03</div>
+<div>
+<span class="text-[10px] uppercase font-bold tracking-[0.2em] text-secondary">Celebration</span>
+<h3 class="font-headline-sm text-xl text-primary mt-1 mb-3">Curate outlays &amp; gilded invitations</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed font-light">
+              Record master artisan invoices, deliberate without scattered chat groups, and broadcast bespoke digital invitations with effortless RSVP management.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-gold-accent/25 flex items-center text-secondary text-xs uppercase tracking-wider font-semibold">
+<span>Instant RSVP concierge tracking</span>
+<span class="material-symbols-outlined ml-1.5 text-sm">mark_email_read</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: INVITATION GALLERY -->
+<section class="w-full py-20 bg-[#F4EFE6] border-t border-b border-gold-accent/30">
+<div class="w-full max-w-[1360px] mx-auto px-6 md:px-10 lg:px-14">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 mb-3">
+<span class="w-8 h-px bg-gold-accent"></span>
+<span class="text-[10px] uppercase font-bold tracking-[0.25em] text-secondary">Heirloom Digital Stationery</span>
+<span class="w-8 h-px bg-gold-accent"></span>
+</div>
+<h2 class="font-headline-lg text-3xl md:text-4xl text-primary mt-1 mb-3">An invitation with the weight of tradition</h2>
+<p class="text-base text-on-surface-variant font-light">Rendered with the tactile warmth, deckled paper texture, and foil-pressed nobility of imperial stationery.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Invitation Card 1: Classic Ivory & Champagne Gold -->
+<div class="group relative rounded-2xl p-7 bg-[#FAF6EF] border-2 border-gold-accent/40 shadow-[0_12px_36px_rgba(116,90,39,0.08)] flex flex-col items-center text-center hover:-translate-y-1.5 transition-all">
+<div class="w-full aspect-[3/4] rounded-xl p-6 bg-[#FDFBF7] border border-gold-accent/50 flex flex-col items-center justify-between relative shadow-inner">
+<!-- Double fine filigree gold border -->
+<div class="absolute inset-2 border border-gold-accent/40 pointer-events-none rounded"></div>
+<div class="absolute inset-3 border border-gold-accent/20 pointer-events-none rounded"></div>
+<div class="pt-2">
+<span class="text-[9px] text-secondary uppercase tracking-[0.25em] font-semibold">The Royal Union of</span>
+<h4 class="font-headline-md text-2xl text-primary mt-1 font-normal">Aanya &amp; Kabir</h4>
+</div>
+<div class="my-auto py-2">
+<span class="material-symbols-outlined text-secondary text-2xl mb-1">spa</span>
+<p class="text-xs text-on-surface-variant italic font-cormorant text-base">Request the blessing of your gracious presence</p>
+<p class="text-[10px] uppercase tracking-[0.25em] font-semibold text-primary mt-1.5">UDAIPUR · RAJASTHAN</p>
+</div>
+<div class="w-full pt-3 border-t border-gold-accent/30">
+<span class="text-[10px] text-secondary uppercase tracking-widest font-semibold">December 14 · 2025</span>
+</div>
+</div>
+<div class="mt-6 text-center">
+<h4 class="font-headline-sm text-lg text-primary font-semibold">Royal Heritage Ivory</h4>
+<p class="text-xs text-on-surface-variant mt-1 font-light">Gold-pressed botanicals on textured cotton rag paper.</p>
+</div>
+</div>
+<!-- Invitation Card 2: Deep Emerald Velvet -->
+<div class="group relative rounded-2xl p-7 bg-[#0D221A] text-[#FAF6EF] border-2 border-gold-accent shadow-[0_16px_45px_rgba(13,34,26,0.35)] flex flex-col items-center text-center hover:-translate-y-1.5 transition-all">
+<div class="w-full aspect-[3/4] rounded-xl p-6 bg-[#142F24] border border-gold-accent/60 flex flex-col items-center justify-between relative shadow-inner">
+<div class="absolute inset-2 border border-gold-accent/50 pointer-events-none rounded"></div>
+<div class="absolute inset-3 border border-gold-accent/25 pointer-events-none rounded"></div>
+<div class="pt-2">
+<span class="text-[9px] text-gold-accent uppercase tracking-[0.25em] font-medium">Sacred Pheras &amp; Reception</span>
+<h4 class="font-headline-md text-2xl text-gold-accent mt-1 font-normal">Kabir &amp; Aanya</h4>
+</div>
+<div class="my-auto py-2">
+<div class="w-9 h-9 rounded-full border border-gold-accent mx-auto flex items-center justify-center mb-1.5">
+<span class="material-symbols-outlined text-gold-accent text-sm">star</span>
+</div>
+<p class="text-xs text-gold-light italic font-cormorant text-base font-light">Two souls woven into eternal joy</p>
+<p class="text-[10px] text-[#FAF6EF] mt-1.5 tracking-[0.25em] uppercase font-semibold">THE OBEROI RAJVILAS</p>
+</div>
+<div class="w-full pt-3 border-t border-gold-accent/30">
+<span class="text-[9px] text-gold-accent uppercase tracking-[0.2em] font-medium">Concierge RSVP &amp; Itinerary</span>
+</div>
+</div>
+<div class="mt-6 text-center">
+<h4 class="font-headline-sm text-lg text-gold-accent font-semibold">Imperial Emerald Velvet</h4>
+<p class="text-xs text-gold-light/80 mt-1 font-light">Deep royal jewel tones adorned with brushed gilt borders.</p>
+</div>
+</div>
+<!-- Invitation Card 3: Modern Minimalist Monogram -->
+<div class="group relative rounded-2xl p-7 bg-[#FAF6EF] border-2 border-gold-accent/40 shadow-[0_12px_36px_rgba(116,90,39,0.08)] flex flex-col items-center text-center hover:-translate-y-1.5 transition-all">
+<div class="w-full aspect-[3/4] rounded-xl p-6 bg-[#F4EDE0] border border-gold-accent/40 flex flex-col items-center justify-between relative">
+<div class="pt-2">
+<div class="w-10 h-10 rounded-full border-2 border-gold-accent/60 bg-[#0D221A] text-gold-accent mx-auto flex items-center justify-center mb-2 font-headline-sm text-sm">
+              AK
+            </div>
+<span class="text-[9px] text-outline uppercase tracking-[0.2em] font-bold">Celebration Itinerary</span>
+</div>
+<div class="space-y-2 py-2 text-left w-full px-2">
+<div class="flex justify-between items-center text-xs pb-1 border-b border-gold-accent/20">
+<span class="font-medium text-primary">Mehendi &amp; Sundowner</span>
+<span class="text-outline text-[11px]">Dec 13 · 4 PM</span>
+</div>
+<div class="flex justify-between items-center text-xs pb-1 border-b border-gold-accent/20">
+<span class="font-medium text-primary">Imperial Sangeet</span>
+<span class="text-outline text-[11px]">Dec 13 · 8 PM</span>
+</div>
+<div class="flex justify-between items-center text-xs">
+<span class="font-medium text-primary">Vedic Pheras &amp; Banquet</span>
+<span class="text-outline text-[11px]">Dec 14 · 6 PM</span>
+</div>
+</div>
+<div class="w-full pt-3 border-t border-gold-accent/30">
+<span class="text-[10px] text-primary uppercase font-bold tracking-[0.25em]">TAP TO RSVP CONCIERGE</span>
+</div>
+</div>
+<div class="mt-6 text-center">
+<h4 class="font-headline-sm text-lg text-primary font-semibold">Contemporary Regal Monogram</h4>
+<p class="text-xs text-on-surface-variant mt-1 font-light">Refined typography honoring multi-day ceremony chronology.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: FINAL CALL TO ACTION -->
+<section class="w-full py-24 bg-[#081611] text-[#FAF6EF] relative overflow-hidden border-t-2 border-[#C5A059]">
+<!-- Opulent Gold Pinstripe Overlay -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background: repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(197,160,89,0.3) 40px, rgba(197,160,89,0.3) 41px);"></div>
+<div class="w-full max-w-[1360px] mx-auto px-6 md:px-10 lg:px-14 text-center relative z-10">
+<div class="flex items-center justify-center gap-3.5 mb-6">
+<span class="w-16 h-px bg-gold-accent"></span>
+<span class="material-symbols-outlined text-gold-accent text-xl">favorite</span>
+<span class="w-16 h-px bg-gold-accent"></span>
+</div>
+<h2 class="font-headline-xl text-4xl md:text-5xl text-[#FAF6EF] tracking-tight max-w-3xl mx-auto mb-6 leading-tight">
+        Make room for the rituals and moments that truly matter.
+      </h2>
+<p class="text-lg text-gold-light max-w-xl mx-auto mb-10 leading-relaxed font-light">
+        Preserve complete budget clarity, intimate harmony between families, and immortalize your wedding story in timeless luxury.
+      </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+<a class="inline-flex items-center justify-center bg-gradient-to-r from-[#DFCA9E] via-[#C5A059] to-[#B89248] hover:opacity-95 text-[#0D221A] text-xs uppercase tracking-[0.2em] font-bold px-10 py-4 rounded-full shadow-[0_8px_30px_rgba(197,160,89,0.35)] transition-all" data-path="start-planning" href="#">
+          Start planning complimentary
+          <span class="material-symbols-outlined ml-2 text-base">arrow_forward</span>
+</a>
+</div>
+<p class="text-xs uppercase tracking-[0.2em] text-gold-light/70 font-medium">
+        Complimentary wedding salon · No credit card required · Unlimited family invitations
+      </p>
+</div>
+</section>
+</div>
+<script>
+  // Interactive micro-behavior: Smooth tab clicks on dashboard preview & admin studio
+  document.addEventListener('DOMContentLoaded', () => {
+    // Tab switching in workspace demo
+    const workspaceTabs = document.querySelectorAll('#workspace-tab-group button');
+    workspaceTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        workspaceTabs.forEach(t => {
+          t.className = 'px-3.5 py-1.5 rounded-full hover:bg-[#FAF6EF] text-on-surface-variant text-xs uppercase tracking-widest transition-colors font-medium';
+        });
+        tab.className = 'px-3.5 py-1.5 rounded-full bg-[#0D221A] text-gold-accent border border-gold-accent/40 text-xs uppercase tracking-widest font-semibold transition-all';
+      });
+    });
+
+    // Admin Palette switcher
+    const paletteButtons = document.querySelectorAll('.palette-btn');
+    const paletteName = document.getElementById('active-palette-name');
+    const previewCard = document.getElementById('admin-live-invitation-card');
+    const cardTitle = document.getElementById('live-card-title');
+    const cardBadge = document.getElementById('live-card-badge');
+    const cardCrest = document.getElementById('live-card-crest');
+
+    paletteButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        paletteButtons.forEach(b => {
+          b.classList.remove('border-2', 'border-primary');
+          b.classList.add('border', 'border-gold-accent/40');
+        });
+        btn.classList.remove('border-gold-accent/40');
+        btn.classList.add('border-2', 'border-primary');
+
+        const palette = btn.getAttribute('data-palette');
+        if (palette === 'emerald') {
+          paletteName.innerText = 'Emerald & Champagne Gold';
+          previewCard.style.backgroundColor = '#0D221A';
+          previewCard.style.borderColor = '#C5A059';
+          cardTitle.style.color = '#C5A059';
+          cardBadge.style.color = '#C5A059';
+          cardCrest.style.borderColor = '#C5A059';
+          cardCrest.style.color = '#C5A059';
+        } else if (palette === 'ivory') {
+          paletteName.innerText = 'Heritage Cotton Ivory';
+          previewCard.style.backgroundColor = '#FAF6EF';
+          previewCard.style.borderColor = '#9C7A3C';
+          cardTitle.style.color = '#0D221A';
+          cardBadge.style.color = '#9C7A3C';
+          cardCrest.style.borderColor = '#9C7A3C';
+          cardCrest.style.color = '#9C7A3C';
+        } else if (palette === 'ruby') {
+          paletteName.innerText = 'Royal Ruby & Gold';
+          previewCard.style.backgroundColor = '#4A1521';
+          previewCard.style.borderColor = '#E4C284';
+          cardTitle.style.color = '#E4C284';
+          cardBadge.style.color = '#E4C284';
+          cardCrest.style.borderColor = '#E4C284';
+          cardCrest.style.color = '#E4C284';
+        }
+      });
+    });
+
+    // Monogram initials switcher
+    const crestBtns = document.querySelectorAll('.crest-toggle-btn');
+    const crestBox = document.getElementById('crest-monogram-box');
+    const liveCrest = document.getElementById('live-card-crest');
+    crestBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        crestBtns.forEach(b => {
+          b.className = 'crest-toggle-btn px-3 py-1 rounded-full bg-[#FAF6EF] hover:bg-[#E7DFCE] border border-gold-accent/40 text-primary text-[11px] font-semibold tracking-wider uppercase';
+        });
+        btn.className = 'crest-toggle-btn px-3 py-1 rounded-full bg-[#0D221A] text-gold-accent border border-gold-accent/50 text-[11px] font-semibold tracking-wider uppercase';
+        const inits = btn.getAttribute('data-initials');
+        if (crestBox) crestBox.innerText = inits;
+        if (liveCrest) liveCrest.innerText = inits;
+      });
+    });
+
+    // Admin save toast simulation
+    const saveBtn = document.getElementById('admin-save-toast-btn');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', () => {
+        const originalText = saveBtn.innerHTML;
+        saveBtn.innerHTML = '<span class="material-symbols-outlined text-sm animate-spin">sync</span> Saving Atelier...';
+        setTimeout(() => {
+          saveBtn.innerHTML = '<span class="material-symbols-outlined text-sm">done</span> Changes Preserved';
+          setTimeout(() => {
+            saveBtn.innerHTML = originalText;
+          }, 2000);
+        }, 600);
+      });
+    }
+  });
+</script></main><footer class="w-full bg-[#081611] border-t border-[#C5A059]/40 pt-16 pb-12 text-[#FAF6EF]"><div class="w-full max-w-[1360px] mx-auto px-6 md:px-10 lg:px-14"><div class="flex flex-col lg:flex-row items-start justify-between gap-12 pb-12 border-b border-gold-accent/25"><div class="max-w-md"><div class="flex items-center gap-3.5 mb-4"><div class="p-1 rounded-full border border-gold-accent/40 bg-[#FAF6EF]"><img alt="Make My Marriage Brandmark" class="h-7 w-7 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XBBAqJwHssKQec0nYq_Nxf2fffg8lk1AeeSE5sbmArgEAurRCvMGIGQqKu0rI4rew-as2trq6qm1-GimEAX9KVNLqndlxU2-XM9tccaO8oHDxxnRvglLpo8UZxEY1opH4hRbHeW0kpmN-vrJZMFiWva4BPVaeQd6j1CLjDqenvJpGLaQMGXO2IU0pWIJ9a1Y28ULdt7v0837wSUfiMOsrB7T8ToZmEXAiIiC7E0xbE1JNceJkSiw6RBmM"/></div><span class="font-headline-sm text-xl text-[#FAF6EF] font-medium tracking-normal">Make My Marriage</span><span class="text-gold-accent text-[10px] uppercase font-bold tracking-[0.2em]">Couture</span></div><p class="text-sm text-gold-light/80 leading-relaxed font-light">Bringing wedding expenses, family chambers, and heirloom invitations together in one serene haven.</p></div><div class="flex flex-wrap gap-x-8 gap-y-3 items-center"><a class="text-xs uppercase tracking-[0.2em] font-medium text-gold-light/80 hover:text-gold-accent transition-colors" data-path="features" href="#">Features</a><a class="text-xs uppercase tracking-[0.2em] font-medium text-gold-light/80 hover:text-gold-accent transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="text-xs uppercase tracking-[0.2em] font-medium text-gold-light/80 hover:text-gold-accent transition-colors" data-path="invitations" href="#">Invitations</a><a class="text-xs uppercase tracking-[0.2em] font-medium text-gold-light/80 hover:text-gold-accent transition-colors" data-path="login" href="#">Log in</a><a class="text-xs uppercase tracking-[0.2em] font-medium text-gold-light/80 hover:text-gold-accent transition-colors" data-path="privacy" href="#">Privacy</a><a class="text-xs uppercase tracking-[0.2em] font-medium text-gold-light/80 hover:text-gold-accent transition-colors" data-path="terms" href="#">Terms</a><a class="text-xs uppercase tracking-[0.2em] font-bold text-gold-accent hover:text-[#FAF6EF] transition-colors inline-flex items-center gap-1 border border-gold-accent/40 px-3 py-1 rounded-full bg-[#0D221A]" href="#admin-panel-section"><span class="material-symbols-outlined text-xs">tune</span>Admin Suite</a></div></div><div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4"><p class="text-xs text-gold-light/60 font-light">© 2025 Make My Marriage Couture. All rights reserved.</p><p class="text-[10px] uppercase tracking-[0.25em] text-gold-accent font-semibold">Heirloom Hospitality · Crafted for Celebrations</p></div></div></footer></body></html>

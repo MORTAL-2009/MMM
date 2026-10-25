@@ -1,0 +1,812 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "error": "#ba1a1a",
+          "on-tertiary-fixed-variant": "#454841",
+          "on-surface": "#1c1c18",
+          "surface-container-low": "#f6f3ed",
+          "primary": "#09261d",
+          "primary-fixed": "#caeadb",
+          "inverse-on-surface": "#f3f0ea",
+          "outline-variant": "#c1c8c3",
+          "surface-container-highest": "#e5e2dc",
+          "on-primary-container": "#88a699",
+          "on-primary": "#ffffff",
+          "primary-fixed-dim": "#aecdbf",
+          "on-secondary": "#ffffff",
+          "tertiary": "#1f221c",
+          "on-background": "#1c1c18",
+          "inverse-surface": "#31312d",
+          "on-secondary-container": "#795f2b",
+          "background": "#fcf9f3",
+          "on-tertiary-container": "#9ea198",
+          "on-primary-fixed-variant": "#304c42",
+          "surface-container-high": "#ebe8e2",
+          "surface-bright": "#fcf9f3",
+          "on-tertiary": "#ffffff",
+          "tertiary-container": "#353831",
+          "secondary-fixed-dim": "#e4c284",
+          "surface-container-lowest": "#ffffff",
+          "on-primary-fixed": "#032017",
+          "surface-dim": "#dcdad4",
+          "surface-container": "#f0eee8",
+          "surface-tint": "#486459",
+          "surface-variant": "#e5e2dc",
+          "inverse-primary": "#aecdbf",
+          "secondary": "#745a27",
+          "on-tertiary-fixed": "#191d17",
+          "secondary-container": "#ffdb9b",
+          "on-secondary-fixed": "#261900",
+          "tertiary-fixed-dim": "#c5c7be",
+          "on-surface-variant": "#424845",
+          "tertiary-fixed": "#e1e3da",
+          "on-secondary-fixed-variant": "#5a4311",
+          "error-container": "#ffdad6",
+          "outline": "#727975",
+          "secondary-fixed": "#ffdea5",
+          "on-error": "#ffffff",
+          "on-error-container": "#93000a",
+          "primary-container": "#203c32",
+          "surface": "#fcf9f3"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-xl": "2.5rem",
+          "gutter-desktop": "2.5rem",
+          "space-sm": "0.5rem",
+          "space-lg": "1.5rem",
+          "margin-mobile": "1.25rem",
+          "space-xs": "0.25rem",
+          "gutter": "1.5rem",
+          "margin": "2rem",
+          "space-2xl": "4rem",
+          "gutter-mobile": "1rem",
+          "space-md": "1rem",
+          "margin-desktop": "5rem"
+        },
+        "fontFamily": {
+          "headline-xl-mobile": [
+            "Playfair Display"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-xl": [
+            "Playfair Display"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-caps": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "title-lg": [
+            "Playfair Display"
+          ]
+        },
+        "fontSize": {
+          "headline-xl-mobile": [
+            "38px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "30px",
+            {
+              "lineHeight": "40px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-xl": [
+            "56px",
+            {
+              "lineHeight": "68px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "50px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-sm": [
+            "22px",
+            {
+              "lineHeight": "30px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "17px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-caps": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.14em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "title-lg": [
+            "19px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-[#F8F5EF]/95 backdrop-blur-md border-b border-[#E7E1D7]"><div class="h-20 w-full max-w-[1360px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Make My Marriage Brandmark" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UiDwkVrTMQjsERsilYVaAqD1TkmZL-FC0y2eL8yFXOUEnTJRcfJZSGAXik6S7RzYP-wIS7NplQ5_WuQoa-ELbqnKWiQOPjUaRFYXhkVfww2LcW3RPDj2NPz9fVXxDJjw_g9cCTQ1BTUAmYDLBmVPjVnBgMNIvW5A8ZUKxcUZtqFCQwcG43U3zEVnvL06yed_2EH60Dek1Q_sNGBlD5tHJdSiJVaOqrErZjilIbU39IgP-q_jmi-sZ2aEs"><a class="font-headline-sm text-headline-sm tracking-tight text-primary" data-path="home" href="#">Make My Marriage</a></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="bg-surface-container text-on-surface font-semibold rounded-lg"><a class="px-space-sm py-space-xs text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors" data-path="features" href="#">Features</a><a class="px-space-sm py-space-xs text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="px-space-sm py-space-xs text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors" data-path="invitations" href="#">Invitations</a><a class="inline-flex items-center gap-1.5 px-space-sm py-space-xs text-on-surface-variant font-label-lg text-label-lg hover:text-on-surface transition-colors group" href="#admin-panel-section"><span class="material-symbols-outlined text-sm text-secondary group-hover:rotate-45 transition-transform">tune</span>Admin Panel<span class="px-1.5 py-0.5 rounded text-[10px] bg-secondary-container text-on-secondary-container font-label-caps uppercase">New</span></a></nav><div class="flex items-center gap-space-lg"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="login" href="#">Log in</a><a class="inline-flex items-center justify-center bg-primary hover:bg-[#162B24] text-on-primary font-label-lg text-label-lg px-space-lg py-space-sm rounded-lg shadow-[0_1px_3px_rgba(32,60,50,0.08)] transition-all" data-path="start-planning" href="#">Start planning</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO -->
+<section class="relative w-full overflow-hidden bg-background pt-space-xl pb-space-2xl md:pb-36">
+<div class="w-full max-w-[1360px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-y-12 lg:gap-x-gutter-desktop items-center">
+<!-- Left Editorial Copy -->
+<div class="lg:col-span-6 flex flex-col items-start pr-0 lg:pr-6 z-10">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/50 shadow-sm mb-6">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">A calmer way to plan your wedding</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight leading-[1.12] mb-6">
+            Two families.<br>
+<span class="italic font-normal text-secondary">One beautiful plan.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-9 leading-relaxed">
+            Bring wedding expenses, family conversations, and beautiful invitations together in one simple place. Built for celebrations where every memory and detail matters.
+          </p>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-8">
+<a class="inline-flex items-center justify-center bg-primary hover:bg-[#162B24] text-on-primary font-label-lg text-label-lg px-8 py-4 rounded-full shadow-[0_4px_16px_rgba(9,38,29,0.18)] transition-all" data-path="start-planning" href="#">
+              Start planning
+              <span class="material-symbols-outlined ml-2 text-base">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center bg-surface-container-lowest hover:bg-surface text-on-surface border border-outline-variant font-label-lg text-label-lg px-8 py-4 rounded-full transition-all shadow-sm" href="#features-overview">
+              Explore features
+            </a>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm">Your wedding, your people, all in one place.</span>
+</div>
+</div>
+<!-- Right Visual Showcase with Floating Card -->
+<div class="lg:col-span-6 relative mt-4 lg:mt-0">
+<div class="relative w-full aspect-[4/3] sm:aspect-[14/11] rounded-2xl overflow-hidden border border-outline-variant/60 shadow-[0_12px_40px_-10px_rgba(9,38,29,0.15)] bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="A joyful Indian bride in an ornate emerald green and ivory lehenga and groom in a cream embroidered sherwani smiling lovingly as they walk down a floral-lined wedding aisle with warm golden-hour light and cheering wedding guests." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLG_ohqbKyDbuKjE_R2CZha2dEVE5VjrxhWx3CpyFNWzx9N6MKrn9YGcSvKxO6rY5HvLPlNXAPI0zCx0Au5TKp5vshbGCK9u1M-1sJK0JwmzyqwOvLFNRpkCQr9FKZRbf0lLfZ8OQJH3r1SbZpK9F7G2c_0XzTVAbezFrYvB0NKcQOQZKRRGwP5fnU2czd6eRFTNy9wgm25jdTGUnyqTvhSuET1Xk8uj-HosL5AmGuxrGfEppHaj6L">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent pointer-events-none"></div>
+</div>
+<!-- Floating Live Budget Preview Card -->
+<div class="relative md:absolute md:-bottom-10 md:-left-8 w-full md:w-[350px] mt-6 md:mt-0 bg-surface-container-lowest rounded-xl p-5 border border-outline-variant shadow-[0_20px_40px_-12px_rgba(9,38,29,0.18)] z-20">
+<div class="flex items-center justify-between pb-3 border-b border-surface-container-high">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">account_balance_wallet</span>
+<span class="font-label-lg text-label-lg text-primary">Budget Tracker</span>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-[10px] uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                Live Sync
+              </span>
+</div>
+<div class="py-3">
+<div class="flex justify-between items-baseline mb-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Spent</span>
+<span class="font-headline-sm text-headline-sm text-primary tracking-tight">₹3,25,000 <span class="font-body-sm text-body-sm text-outline font-normal">/ ₹8,00,000</span></span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 40.6%;"></div>
+<div class="h-full bg-secondary-fixed-dim" style="width: 12%;"></div>
+</div>
+<div class="flex justify-between items-center mt-1.5 text-on-surface-variant">
+<span class="font-body-sm text-body-sm text-outline">40.6% allocated</span>
+<span class="font-label-md text-label-md text-secondary">₹4,75,000 remaining</span>
+</div>
+</div>
+<!-- Ledger Items -->
+<div class="space-y-2 pt-2 border-t border-surface-container-high">
+<div class="flex items-center justify-between text-left">
+<div class="min-w-0 pr-2">
+<p class="font-body-sm text-body-sm text-on-surface truncate font-medium">Royal Palace Venue Advance</p>
+<p class="font-label-caps text-[10px] text-outline">Paid · Groom's Family</p>
+</div>
+<span class="font-body-sm text-body-sm font-semibold text-primary whitespace-nowrap">₹2,00,000</span>
+</div>
+<div class="flex items-center justify-between text-left">
+<div class="min-w-0 pr-2">
+<p class="font-body-sm text-body-sm text-on-surface truncate font-medium">Couture Lehenga &amp; Sherwani</p>
+<p class="font-label-caps text-[10px] text-outline">Paid · Bride's Family</p>
+</div>
+<span class="font-body-sm text-body-sm font-semibold text-primary whitespace-nowrap">₹85,000</span>
+</div>
+<div class="flex items-center justify-between text-left">
+<div class="min-w-0 pr-2">
+<p class="font-body-sm text-body-sm text-on-surface truncate font-medium">Floral Mandap Decorator</p>
+<p class="font-label-caps text-[10px] text-secondary">Shared 50/50 · Pending</p>
+</div>
+<span class="font-body-sm text-body-sm font-semibold text-primary whitespace-nowrap">₹40,000</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: VALUE PROPOSITION STRIP -->
+<section class="w-full max-w-[1360px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop -mt-8 md:-mt-12 mb-space-2xl z-30">
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/70 p-6 md:p-8 shadow-[0_4px_24px_rgba(32,60,50,0.04)]">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:divide-x divide-outline-variant/40">
+<!-- Column 1 -->
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0 border border-outline-variant/40">
+<span class="material-symbols-outlined text-secondary text-2xl">account_balance</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary mb-1">Every expense in one place</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-normal">
+              Track vendor deposits, family contributions, and total split budgets without spreadsheet chaos.
+            </p>
+</div>
+</div>
+<!-- Column 2 -->
+<div class="flex items-start gap-4 md:pl-8">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0 border border-outline-variant/40">
+<span class="material-symbols-outlined text-primary text-2xl">family_restroom</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary mb-1">Both families in sync</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-normal">
+              Transparent updates, private side-notes, and unified decisions with clarity and mutual respect.
+            </p>
+</div>
+</div>
+<!-- Column 3 -->
+<div class="flex items-start gap-4 md:pl-8">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center shrink-0 border border-outline-variant/40">
+<span class="material-symbols-outlined text-secondary text-2xl">drafts</span>
+</div>
+<div>
+<h3 class="font-title-lg text-title-lg text-primary mb-1">Invitations worth sharing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-normal">
+              Bespoke digital stationery delivered through a private link with effortless instant RSVPs.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: FEATURES GRID -->
+<section class="w-full py-space-xl bg-background" id="features-overview">
+<div class="w-full max-w-[1360px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Everything In One Place</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2 mb-4 tracking-tight">
+          The planning feels lighter when everything comes together.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          From the earliest budget discussions to the final guest welcome, keep every milestone thoughtfully coordinated.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Feature 1: Wedding Expenses -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/80 p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-primary text-xl">pie_chart</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Wedding Expenses</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+              Track costs, payments, and your overall budget without scattered spreadsheets or awkward balance checks.
+            </p>
+</div>
+<!-- Micro Spend Breakdown UI -->
+<div class="bg-surface-container-low rounded-xl p-5 border border-outline-variant/50">
+<div class="flex justify-between items-center mb-3">
+<span class="font-label-caps text-label-caps text-outline uppercase">Major Outlays</span>
+<span class="font-label-md text-label-md text-primary font-semibold">₹6,80,000 committed</span>
+</div>
+<div class="h-2.5 rounded-full bg-surface-container flex overflow-hidden mb-4">
+<div class="h-full bg-primary" style="width: 45%;"></div>
+<div class="h-full bg-secondary" style="width: 25%;"></div>
+<div class="h-full bg-secondary-fixed-dim" style="width: 18%;"></div>
+<div class="h-full bg-outline-variant" style="width: 12%;"></div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Venue (45%)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Catering (25%)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Decor (18%)</span>
+</div>
+<div class="flex items-center gap-1.5"><div><div class="flex items-center justify-between mb-5"><div class="w-10 h-10 rounded-lg bg-secondary/15 flex items-center justify-center"><span class="material-symbols-outlined text-secondary text-xl">admin_panel_settings</span></div><span class="font-label-caps text-[10px] px-2 py-0.5 rounded-full bg-surface-container-high text-secondary uppercase font-semibold">Admin Suite</span></div><h3 class="font-headline-sm text-headline-sm text-primary mb-2">Admin Panel &amp; Brand Styling</h3><p class="font-body-md text-body-md text-on-surface-variant mb-6">Comprehensive controls for family branding, custom monograms, curated color palettes, font pairings, and invitation themes in one intuitive center.</p></div><div class="bg-surface-container-low rounded-xl p-4 border border-outline-variant/50 space-y-3"><div class="flex flex-wrap items-center justify-between gap-2 pb-2.5 border-b border-outline-variant/40"><div class="flex items-center gap-2"><span class="font-label-caps text-label-caps text-outline uppercase">Active Palette:</span><div class="flex items-center gap-1.5"><span class="w-4 h-4 rounded-full bg-[#C6A66B] ring-2 ring-secondary ring-offset-1"></span><span class="w-4 h-4 rounded-full bg-[#203C32]"></span><span class="w-4 h-4 rounded-full bg-[#8E5E58]"></span><span class="w-4 h-4 rounded-full bg-[#F8F5EF] border border-outline-variant"></span></div></div><span class="font-label-caps text-[10px] text-secondary font-semibold uppercase">Champagne &amp; Emerald</span></div><div class="flex items-center justify-between text-xs text-on-surface-variant"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-base">verified_user</span><span class="">Family Permissions: Mutual Admin</span></div><a href="#admin-panel-section" class="text-secondary font-semibold hover:underline inline-flex items-center gap-0.5 text-xs">Open Admin <span class="material-symbols-outlined text-xs">arrow_forward</span></a></div></div></div>
+</div>
+</div>
+</div>
+<!-- Feature 2: Family Conversations -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/80 p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-10 h-10 rounded-lg bg-secondary/15 flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-secondary text-xl">forum</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Family Conversations</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+              Keep planning updates and decisions in one shared space for both families, preserving harmony and clarity.
+            </p>
+</div>
+<!-- Micro Chat Snippet -->
+<div class="bg-surface-container-low rounded-xl p-4 border border-outline-variant/50 space-y-3">
+<div class="flex items-start gap-2.5">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-caps text-xs">S</div>
+<div class="bg-surface-container-lowest p-2.5 rounded-lg rounded-tl-none border border-outline-variant/50 max-w-[85%]">
+<p class="font-label-caps text-[10px] text-outline mb-0.5">Sharma Family (Bride)</p>
+<p class="font-body-sm text-body-sm text-on-surface">Catering tasting for Rajasthani counters confirmed for this Sunday afternoon?</p>
+</div>
+</div>
+<div class="flex items-start gap-2.5 justify-end">
+<div class="bg-primary text-on-primary p-2.5 rounded-lg rounded-tr-none max-w-[85%]">
+<p class="font-label-caps text-[10px] text-primary-fixed-dim mb-0.5">Verma Family (Groom)</p>
+<p class="font-body-sm text-body-sm text-on-primary">Perfect. Kabir added the Sangeet playlist draft in the workspace files too!</p>
+</div>
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-caps text-xs">V</div>
+</div>
+</div>
+</div>
+<!-- Feature 3: Digital Invitations -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/80 p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-primary text-xl">mark_email_read</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Digital Invitations</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+              Create an elegant invitation and share it with guests through a link with integrated multi-event itineraries.
+            </p>
+</div>
+<!-- RSVP Tracker Tag Preview -->
+<div class="bg-surface-container-low rounded-xl p-4 border border-outline-variant/50 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest border border-outline-variant/60 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary">mail</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-primary">makemymarriage.com/aanya-kabir</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">420 Sent · 98% Opened</p>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary text-on-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-xs">done_all</span>
+                342 Confirmed
+              </span>
+</div>
+</div>
+</div>
+<!-- Feature 4: Your Wedding Workspace -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/80 p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow"><div><div class="flex items-center justify-between mb-5"><div class="w-10 h-10 rounded-lg bg-secondary/15 flex items-center justify-center"><span class="material-symbols-outlined text-secondary text-xl">admin_panel_settings</span></div><span class="font-label-caps text-[10px] px-2 py-0.5 rounded-full bg-surface-container-high text-secondary uppercase font-semibold">Admin Suite</span></div><h3 class="font-headline-sm text-headline-sm text-primary mb-2">Admin Panel &amp; Brand Styling</h3><p class="font-body-md text-body-md text-on-surface-variant mb-6">Comprehensive controls for family branding, custom monograms, curated color palettes, font pairings, and invitation themes in one intuitive center.</p></div><div class="bg-surface-container-low rounded-xl p-4 border border-outline-variant/50 space-y-3"><div class="flex flex-wrap items-center justify-between gap-2 pb-2.5 border-b border-outline-variant/40"><div class="flex items-center gap-2"><span class="font-label-caps text-label-caps text-outline uppercase">Active Palette:</span><div class="flex items-center gap-1.5"><span class="w-4 h-4 rounded-full bg-[#C6A66B] ring-2 ring-secondary ring-offset-1"></span><span class="w-4 h-4 rounded-full bg-[#203C32]"></span><span class="w-4 h-4 rounded-full bg-[#8E5E58]"></span><span class="w-4 h-4 rounded-full bg-[#F8F5EF] border border-outline-variant"></span></div></div><span class="font-label-caps text-[10px] text-secondary font-semibold uppercase">Champagne &amp; Emerald</span></div><div class="flex items-center justify-between text-xs text-on-surface-variant"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-base">verified_user</span><span class="">Family Permissions: Mutual Admin</span></div><a href="#admin-panel-section" class="text-secondary font-semibold hover:underline inline-flex items-center gap-0.5 text-xs">Open Admin <span class="material-symbols-outlined text-xs">arrow_forward</span></a></div></div></div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: PRODUCT PREVIEW (WORKSPACE DEMO) -->
+<section class="w-full py-space-2xl bg-surface-container-low/60">
+<div class="w-full max-w-[1360px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Designed For Real Weddings</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2 mb-3">A workspace that brings serenity to scale</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Experience how effortless cross-family coordination feels inside your personalized dashboard.</p>
+</div>
+<!-- Main Workspace Glass Card -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant shadow-[0_20px_50px_-15px_rgba(9,38,29,0.08)] overflow-hidden">
+<!-- Workspace Header Bar -->
+<div class="bg-surface-container-lowest border-b border-surface-container-high px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-sm">
+              AK
+            </div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary tracking-tight">Aanya &amp; Kabir's Wedding</h4>
+<p class="font-body-sm text-body-sm text-outline">December 14, 2025 · Udaipur, Rajasthan</p>
+</div>
+</div>
+<!-- Navigation Tabs -->
+<div class="flex items-center gap-1 overflow-x-auto pb-1 md:pb-0">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold">Overview</button>
+<button class="px-3 py-1.5 rounded-lg hover:bg-surface-container-low text-on-surface-variant font-label-md text-label-md transition-colors">Expenses</button>
+<button class="px-3 py-1.5 rounded-lg hover:bg-surface-container-low text-on-surface-variant font-label-md text-label-md transition-colors">Family Chat</button>
+<button class="px-3 py-1.5 rounded-lg hover:bg-surface-container-low text-on-surface-variant font-label-md text-label-md transition-colors">Invitations</button>
+<button class="px-3 py-1.5 rounded-lg hover:bg-surface-container-low text-on-surface-variant font-label-md text-label-md transition-colors">Guest List</button>
+<button class="px-3 py-1.5 rounded-lg hover:bg-surface-container-low text-on-surface-variant font-label-md text-label-md transition-colors">Settings</button>
+</div>
+</div>
+<!-- Dashboard Content Grid -->
+<div class="p-6 md:p-8 space-y-8">
+<!-- Summary Metrics Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-surface-container-low rounded-xl p-5 border border-outline-variant/40">
+<p class="font-label-caps text-label-caps text-outline uppercase tracking-wider mb-1">Total Wedding Budget</p>
+<p class="font-headline-md text-headline-md text-primary">₹8,00,000</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Joint target agreed by both families</p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-5 border border-outline-variant/40">
+<p class="font-label-caps text-label-caps text-outline uppercase tracking-wider mb-1">Total Paid To Date</p>
+<p class="font-headline-md text-headline-md text-primary">₹3,25,000</p>
+<p class="font-body-sm text-body-sm text-secondary mt-1">40.6% cleared across 14 vendors</p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-5 border border-outline-variant/40">
+<p class="font-label-caps text-label-caps text-outline uppercase tracking-wider mb-1">Projected Balance</p>
+<p class="font-headline-md text-headline-md text-secondary">₹4,75,000</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Comfortably within planned contingency</p>
+</div>
+</div>
+<!-- Category Breakdown Pills -->
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-label-caps text-label-caps text-outline uppercase mr-2">Filter Category:</span>
+<span class="px-3 py-1 rounded-full bg-primary text-on-primary font-label-sm text-xs font-medium cursor-pointer">All Outlays</span>
+<span class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-xs cursor-pointer">Venue &amp; Stay</span>
+<span class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-xs cursor-pointer">Jewelry &amp; Attire</span>
+<span class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-xs cursor-pointer">Decor &amp; Floral</span>
+<span class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-xs cursor-pointer">Photography</span>
+<span class="px-3 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-xs cursor-pointer">Hospitality &amp; Logistics</span>
+</div>
+<!-- Two Column Main Workspace Display: Recent Expenses & Task List -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Expenses Table -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl border border-outline-variant/60 overflow-hidden">
+<div class="px-5 py-4 border-b border-surface-container-high flex items-center justify-between">
+<h5 class="font-title-lg text-title-lg text-primary">Recent Transactions &amp; Bookings</h5>
+<a class="font-label-md text-label-md text-secondary hover:underline" href="#">View all 28 entries</a>
+</div>
+<div class="divide-y divide-surface-container-high overflow-x-auto">
+<div class="p-4 flex items-center justify-between hover:bg-surface-container-low/50 transition-colors">
+<div class="min-w-0 pr-4">
+<p class="font-body-md text-body-md font-medium text-on-surface">Udai Kothi Palace · 1st Installment</p>
+<p class="font-body-sm text-body-sm text-outline">Category: Venue · Paid by Mr. R. Verma</p>
+</div>
+<div class="text-right shrink-0">
+<p class="font-body-md text-body-md font-semibold text-primary">₹2,00,000</p>
+<span class="inline-block px-2 py-0.5 rounded text-[11px] font-medium bg-primary-fixed text-on-primary-fixed">Settled</span>
+</div>
+</div>
+<div class="p-4 flex items-center justify-between hover:bg-surface-container-low/50 transition-colors">
+<div class="min-w-0 pr-4">
+<p class="font-body-md text-body-md font-medium text-on-surface">Sabyasachi Bridal Ensemble Advance</p>
+<p class="font-body-sm text-body-sm text-outline">Category: Attire · Paid by Mrs. P. Sharma</p>
+</div>
+<div class="text-right shrink-0">
+<p class="font-body-md text-body-md font-semibold text-primary">₹85,000</p>
+<span class="inline-block px-2 py-0.5 rounded text-[11px] font-medium bg-primary-fixed text-on-primary-fixed">Settled</span>
+</div>
+</div>
+<div class="p-4 flex items-center justify-between hover:bg-surface-container-low/50 transition-colors">
+<div class="min-w-0 pr-4">
+<p class="font-body-md text-body-md font-medium text-on-surface">Lotus Mandap &amp; Floral Artistry</p>
+<p class="font-body-sm text-body-sm text-outline">Category: Decor · Shared 50/50</p>
+</div>
+<div class="text-right shrink-0">
+<p class="font-body-md text-body-md font-semibold text-primary">₹40,000</p>
+<span class="inline-block px-2 py-0.5 rounded text-[11px] font-medium bg-secondary-container text-on-secondary-container">Pending Review</span>
+</div>
+</div>
+<div class="p-4 flex items-center justify-between hover:bg-surface-container-low/50 transition-colors">
+<div class="min-w-0 pr-4">
+<p class="font-body-md text-body-md font-medium text-on-surface">Cinematic Video &amp; Drone Retainer</p>
+<p class="font-body-sm text-body-sm text-outline">Category: Photography · Shared 50/50</p>
+</div>
+<div class="text-right shrink-0">
+<p class="font-body-md text-body-md font-semibold text-primary">₹60,000</p>
+<span class="inline-block px-2 py-0.5 rounded text-[11px] font-medium bg-secondary-fixed text-on-secondary-fixed-variant">Shared 50/50</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Upcoming Task Checklist -->
+<div class="lg:col-span-4 bg-surface-container-low rounded-xl p-5 border border-outline-variant/60">
+<div class="flex items-center justify-between pb-3 border-b border-surface-container-high mb-4">
+<h5 class="font-title-lg text-title-lg text-primary">Next Milestones</h5>
+<span class="font-label-caps text-[10px] text-secondary font-bold uppercase">3 Pending</span>
+</div>
+<div class="space-y-3.5">
+<div class="flex items-start gap-3 p-2.5 rounded-lg bg-surface-container-lowest border border-outline-variant/30">
+<div class="w-4 h-4 mt-0.5 rounded border border-outline flex items-center justify-center shrink-0"></div>
+<div>
+<p class="font-body-sm text-body-sm font-medium text-on-surface">Confirm Sangeet Choreographer</p>
+<p class="font-label-caps text-[10px] text-error font-medium">Due Nov 10 · Verma Family</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-2.5 rounded-lg bg-surface-container-lowest border border-outline-variant/30">
+<div class="w-4 h-4 mt-0.5 rounded border border-outline flex items-center justify-center shrink-0"></div>
+<div>
+<p class="font-body-sm text-body-sm font-medium text-on-surface">Finalize Mehendi Guest Favors</p>
+<p class="font-label-caps text-[10px] text-secondary font-medium">Due Nov 15 · Sharma Family</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-2.5 rounded-lg bg-surface-container-lowest border border-outline-variant/30">
+<div class="w-4 h-4 mt-0.5 rounded border border-outline flex items-center justify-center shrink-0"></div>
+<div>
+<p class="font-body-sm text-body-sm font-medium text-on-surface">Review Digital Invitation Draft</p>
+<p class="font-label-caps text-[10px] text-outline font-medium">Due Nov 18 · Aanya &amp; Kabir</p>
+</div>
+</div>
+</div>
+<button class="w-full mt-4 py-2 bg-surface-container-highest hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg transition-colors">
+                + Add shared to-do
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="admin-panel-section" class="w-full py-space-2xl bg-background border-t border-b border-outline-variant/40"><div class="w-full max-w-[1360px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop"><div class="text-center max-w-2xl mx-auto mb-12"><div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary/10 border border-secondary/30 mb-4"><span class="material-symbols-outlined text-secondary text-base">shield_with_heart</span><span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Intuitive Admin Suite</span></div><h2 class="font-headline-lg text-headline-lg text-primary mb-3">Wedding Settings &amp; Brand Studio</h2><p class="font-body-md text-body-md text-on-surface-variant">Effortlessly customize bride &amp; groom family branding, logo crests, royal color palettes, typography, and digital invitation privacy from one place.</p></div><div class="bg-surface-container-lowest rounded-2xl border border-outline-variant shadow-[0_20px_50px_-15px_rgba(9,38,29,0.08)] overflow-hidden"><div class="bg-surface-container-low/70 border-b border-surface-container-high px-6 py-4 flex flex-wrap items-center justify-between gap-4"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-xl">settings_suggest</span></div><div><div class="flex items-center gap-2"><h3 class="font-headline-sm text-headline-sm text-primary">Admin Control Center</h3><span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-[10px] uppercase font-bold">Live Studio</span></div><p class="font-body-sm text-body-sm text-outline">Aanya Sharma &amp; Kabir Verma · Udaipur Celebration</p></div></div><div class="flex items-center gap-2"><button id="admin-reset-btn" class="px-3.5 py-2 rounded-lg border border-outline-variant bg-surface-container-lowest hover:bg-surface text-on-surface font-label-md text-label-md transition-colors">Reset Defaults</button><button id="admin-save-toast-btn" class="px-4 py-2 rounded-lg bg-primary hover:bg-[#162B24] text-on-primary font-label-md text-label-md shadow-sm transition-all inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-sm">check_circle</span>Save Changes</button></div></div><div class="p-6 md:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8"><div class="lg:col-span-7 space-y-6"><div class="bg-surface-container-lowest rounded-xl border border-outline-variant/60 p-5"><div class="flex items-center justify-between mb-4"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-lg">palette</span><h4 class="font-title-lg text-title-lg text-primary">Wedding Color Palette</h4></div><span class="font-label-caps text-[10px] text-secondary font-bold uppercase" id="active-palette-name">Emerald &amp; Champagne Gold</span></div><div class="grid grid-cols-1 sm:grid-cols-3 gap-3" id="palette-selector-group"><button type="button" data-palette="emerald" class="palette-btn p-3 rounded-lg border-2 border-primary bg-surface-container-low text-left transition-all"><div class="flex items-center gap-1.5 mb-2"><span class="w-4 h-4 rounded-full bg-[#09261D]"></span><span class="w-4 h-4 rounded-full bg-[#C6A66B]"></span><span class="w-4 h-4 rounded-full bg-[#FCF9F3] border border-outline-variant"></span></div><p class="font-label-md text-label-md text-primary font-semibold">Emerald &amp; Gold</p><p class="font-label-caps text-[10px] text-outline">Classic Royal</p></button><button type="button" data-palette="ivory" class="palette-btn p-3 rounded-lg border border-outline-variant bg-surface-container-lowest hover:border-secondary text-left transition-all"><div class="flex items-center gap-1.5 mb-2"><span class="w-4 h-4 rounded-full bg-[#FCFBF8] border border-outline-variant"></span><span class="w-4 h-4 rounded-full bg-[#C6A66B]"></span><span class="w-4 h-4 rounded-full bg-[#745A27]"></span></div><p class="font-label-md text-label-md text-primary font-semibold">Heritage Ivory</p><p class="font-label-caps text-[10px] text-outline">Warm Cotton Foil</p></button><button type="button" data-palette="ruby" class="palette-btn p-3 rounded-lg border border-outline-variant bg-surface-container-lowest hover:border-secondary text-left transition-all"><div class="flex items-center gap-1.5 mb-2"><span class="w-4 h-4 rounded-full bg-[#4A1521]"></span><span class="w-4 h-4 rounded-full bg-[#E4C284]"></span><span class="w-4 h-4 rounded-full bg-[#F6F3ED] border border-outline-variant"></span></div><p class="font-label-md text-label-md text-primary font-semibold">Royal Ruby</p><p class="font-label-caps text-[10px] text-outline">Velvet Dusk</p></button></div></div><div class="bg-surface-container-lowest rounded-xl border border-outline-variant/60 p-5"><div class="flex items-center justify-between mb-4"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-lg">token</span><h4 class="font-title-lg text-title-lg text-primary">Monogram &amp; Family Crest</h4></div><span class="font-label-caps text-[10px] text-outline uppercase">SVG or High-Res PNG</span></div><div class="flex flex-col sm:flex-row items-center gap-4 p-4 rounded-lg bg-surface-container-low border border-dashed border-outline-variant"><div id="crest-monogram-box" class="w-16 h-16 rounded-full border-2 border-[#C6A66B] bg-[#09261D] text-[#C6A66B] flex items-center justify-center font-headline-sm text-base shadow-sm shrink-0">A&amp;K</div><div class="flex-1 text-center sm:text-left"><p class="font-label-md text-label-md text-primary font-medium mb-1">Joint Wedding Monogram Crest</p><p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Select monogram style or upload bespoke emblem for invitations &amp; printables.</p><div class="flex flex-wrap gap-2 justify-center sm:justify-start"><button type="button" class="crest-toggle-btn px-2.5 py-1 rounded bg-primary text-on-primary font-label-md text-[11px]" data-initials="A&amp;K">A&amp;K Classic</button><button type="button" class="crest-toggle-btn px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-[11px]" data-initials="S ❦ V">S ❦ V Families</button><button type="button" class="crest-toggle-btn px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-[11px]" data-initials="∞">Eternity Knot</button></div></div></div></div><div class="bg-surface-container-lowest rounded-xl border border-outline-variant/60 p-5"><div class="flex items-center justify-between mb-4"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-lg">lock_person</span><h4 class="font-title-lg text-title-lg text-primary">Co-Hosting &amp; Privacy Controls</h4></div><span class="font-label-caps text-[10px] text-secondary font-bold uppercase">Multi-Admin Active</span></div><div class="space-y-3"><div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low"><div class="pr-4"><p class="font-label-md text-label-md text-primary font-medium">Sharma &amp; Verma Mutual Approval</p><p class="font-body-sm text-body-sm text-on-surface-variant">Major budget modifications above ₹50,000 require approval from both heads.</p></div><label class="relative inline-flex items-center cursor-pointer"><input type="checkbox" checked="" class="sr-only peer admin-permission-toggle"><div class="w-11 h-6 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div></label></div><div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low"><div class="pr-4"><p class="font-label-md text-label-md text-primary font-medium">Private RSVP Guest Password</p><p class="font-body-sm text-body-sm text-on-surface-variant">Require guest phone or wedding code before unlocking venue maps and dates.</p></div><label class="relative inline-flex items-center cursor-pointer"><input type="checkbox" checked="" class="sr-only peer admin-permission-toggle"><div class="w-11 h-6 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div></label></div></div></div></div><div class="lg:col-span-5 flex flex-col"><div class="bg-surface-container-low rounded-xl border border-outline-variant/60 p-5 flex-1 flex flex-col justify-between"><div class="flex items-center justify-between pb-3 border-b border-surface-container-high mb-4"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">preview</span><h4 class="font-title-lg text-title-lg text-primary">Live Invitation Preview</h4></div><span class="font-label-caps text-[10px] text-primary font-bold uppercase tracking-wider">Updated Realtime</span></div><div id="admin-live-invitation-card" class="w-full aspect-[3/4] max-w-[320px] mx-auto rounded-xl p-6 bg-[#09261D] text-on-primary border-2 border-[#C6A66B]/60 shadow-[0_12px_40px_rgba(9,38,29,0.2)] flex flex-col items-center justify-between relative transition-all duration-300"><div class="absolute inset-2 border border-[#C6A66B]/40 pointer-events-none rounded"></div><div class="pt-2 text-center"><span id="live-card-badge" class="font-label-caps text-[9px] text-[#E4C284] uppercase tracking-[0.2em]">Ceremony &amp; Reception</span><h4 id="live-card-title" class="font-headline-md text-headline-md text-[#E4C284] mt-1">Kabir &amp; Aanya</h4></div><div class="my-auto py-2 text-center"><div id="live-card-crest" class="w-12 h-12 rounded-full border border-[#C6A66B] mx-auto flex items-center justify-center font-headline-sm text-sm text-[#E4C284] mb-2">A&amp;K</div><p id="live-card-quote" class="font-body-sm text-body-sm text-primary-fixed-dim italic">Two families united with love</p><p id="live-card-venue" class="font-label-caps text-label-caps text-on-primary mt-1 tracking-widest">THE OBEROI RAJVILAS · UDAIPUR</p></div><div class="w-full pt-3 border-t border-[#203C32] text-center"><span id="live-card-footer" class="font-label-caps text-[10px] text-[#E4C284] uppercase tracking-wider">RSVP Link · Dec 14, 2025</span></div></div><div class="mt-4 pt-4 border-t border-surface-container-high flex items-center justify-between text-xs text-on-surface-variant"><span class="">Changes auto-sync to RSVP stationery</span><span class="font-semibold text-secondary flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>Online</span></div></div></div></div></div></div></section>
+<!-- SECTION 5: HOW IT WORKS -->
+<section class="w-full py-space-2xl bg-background">
+<div class="w-full max-w-[1360px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Peace Of Mind in 3 Steps</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2 mb-3">Three simple steps to get everyone on the same page</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Simple onboarding designed for busy couples and multi-generational families.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/70 p-8 shadow-sm flex flex-col justify-between relative group hover:border-secondary transition-colors">
+<div>
+<div class="font-headline-xl text-headline-xl text-secondary/40 font-light mb-4">01</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Create your wedding workspace</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Set your celebration dates, approximate guest count, and overall budget in minutes. The system automatically drafts your multi-ceremony template.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-surface-container-high flex items-center text-secondary font-label-md text-label-md">
+<span class="">Setup takes under 2 minutes</span>
+<span class="material-symbols-outlined ml-1 text-sm">schedule</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/70 p-8 shadow-sm flex flex-col justify-between relative group hover:border-secondary transition-colors">
+<div>
+<div class="font-headline-xl text-headline-xl text-secondary/40 font-light mb-4">02</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Invite the people planning with you</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Seamlessly bring in parents, siblings, and key planners from both sides with customizable access controls for complete comfort.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-surface-container-high flex items-center text-secondary font-label-md text-label-md">
+<span class="">Granular privacy &amp; permissions</span>
+<span class="material-symbols-outlined ml-1 text-sm">verified_user</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest rounded-2xl border border-outline-variant/70 p-8 shadow-sm flex flex-col justify-between relative group hover:border-secondary transition-colors">
+<div>
+<div class="font-headline-xl text-headline-xl text-secondary/40 font-light mb-4">03</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-3">Organize expenses &amp; share invites</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Track payments in real time, discuss ideas without chaotic messaging groups, and publish bespoke digital stationery for your guests.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-surface-container-high flex items-center text-secondary font-label-md text-label-md">
+<span class="">Instant RSVP confirmation tracking</span>
+<span class="material-symbols-outlined ml-1 text-sm">mark_email_read</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: INVITATION GALLERY -->
+<section class="w-full py-space-2xl bg-surface-container-low/40">
+<div class="w-full max-w-[1360px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Heirloom Digital Stationery</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-2 mb-3">An invitation that feels like your celebration</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Digital stationery crafted with the weight, warmth, and grace of handcrafted cotton rag paper.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Invitation Card 1: Classic Ivory & Champagne Gold -->
+<div class="group relative rounded-2xl p-8 bg-[#FCFBF8] border border-outline-variant/80 shadow-[0_8px_30px_rgba(116,90,39,0.06)] flex flex-col items-center text-center hover:-translate-y-1 transition-transform">
+<div class="w-full aspect-[3/4] rounded-xl p-6 bg-surface-container-lowest border border-[#E7E1D7] flex flex-col items-center justify-between relative shadow-inner">
+<!-- Ornamental Border Accent -->
+<div class="absolute inset-2 border border-secondary/30 pointer-events-none rounded"></div>
+<div class="pt-2">
+<span class="font-label-caps text-[9px] text-secondary uppercase tracking-[0.2em]">The Wedding of</span>
+<h4 class="font-headline-md text-headline-md text-primary mt-1">Aanya &amp; Kabir</h4>
+</div>
+<div class="my-auto py-2">
+<span class="material-symbols-outlined text-secondary text-2xl mb-1">spa</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic">Request the honor of your presence</p>
+<p class="font-label-caps text-label-caps text-primary mt-1">UDAIPUR · RAJASTHAN</p>
+</div>
+<div class="w-full pt-3 border-t border-surface-container-high">
+<span class="font-label-caps text-[10px] text-secondary uppercase">December 14 · 2025</span>
+</div>
+</div>
+<div class="mt-6 text-center">
+<h4 class="font-title-lg text-title-lg text-primary">Royal Heritage Ivory</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Foil-pressed gold botanicals with delicate serif typography.</p>
+</div>
+</div>
+<!-- Invitation Card 2: Deep Emerald Velvet -->
+<div class="group relative rounded-2xl p-8 bg-primary text-on-primary border border-primary-container shadow-[0_12px_40px_rgba(9,38,29,0.2)] flex flex-col items-center text-center hover:-translate-y-1 transition-transform">
+<div class="w-full aspect-[3/4] rounded-xl p-6 bg-[#162B24] border border-secondary/40 flex flex-col items-center justify-between relative shadow-inner">
+<div class="absolute inset-2 border border-secondary/30 pointer-events-none rounded"></div>
+<div class="pt-2">
+<span class="font-label-caps text-[9px] text-secondary-fixed uppercase tracking-[0.2em]">Ceremony &amp; Reception</span>
+<h4 class="font-headline-md text-headline-md text-secondary-fixed mt-1">Kabir &amp; Aanya</h4>
+</div>
+<div class="my-auto py-2">
+<div class="w-8 h-8 rounded-full border border-secondary/50 mx-auto flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-secondary-fixed text-sm">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim italic">Two souls united in celebration</p>
+<p class="font-label-caps text-label-caps text-on-primary mt-1 tracking-widest">THE OBEROI RAJVILAS</p>
+</div>
+<div class="w-full pt-3 border-t border-primary-container">
+<span class="font-label-caps text-[10px] text-secondary-fixed uppercase tracking-wider">RSVP Link &amp; Details</span>
+</div>
+</div>
+<div class="mt-6 text-center">
+<h4 class="font-title-lg text-title-lg text-on-primary">Emerald &amp; Gilded Arch</h4>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim mt-1">Rich jewel tones designed for regal evening affairs.</p>
+</div>
+</div>
+<!-- Invitation Card 3: Modern Minimalist Monogram -->
+<div class="group relative rounded-2xl p-8 bg-surface-container-lowest border border-outline-variant/80 shadow-[0_8px_30px_rgba(32,60,50,0.05)] flex flex-col items-center text-center hover:-translate-y-1 transition-transform">
+<div class="w-full aspect-[3/4] rounded-xl p-6 bg-surface-container-low border border-outline-variant/50 flex flex-col items-center justify-between relative">
+<div class="pt-2">
+<div class="w-10 h-10 rounded-full border border-primary/20 mx-auto flex items-center justify-center mb-2">
+<span class="font-headline-sm text-headline-sm text-primary">A&amp;K</span>
+</div>
+<span class="font-label-caps text-[9px] text-outline uppercase tracking-widest">Wedding Schedule</span>
+</div>
+<div class="space-y-2 py-2 text-left w-full px-2">
+<div class="flex justify-between items-center text-xs">
+<span class="font-medium text-primary">Mehendi &amp; Sundowner</span>
+<span class="text-outline">Dec 13 · 4 PM</span>
+</div>
+<div class="flex justify-between items-center text-xs">
+<span class="font-medium text-primary">Sangeet Night</span>
+<span class="text-outline">Dec 13 · 8 PM</span>
+</div>
+<div class="flex justify-between items-center text-xs">
+<span class="font-medium text-primary">Pheras &amp; Dinner</span>
+<span class="text-outline">Dec 14 · 6 PM</span>
+</div>
+</div>
+<div class="w-full pt-3 border-t border-surface-container-high">
+<span class="font-label-caps text-[10px] text-primary uppercase font-bold tracking-widest">TAP TO RSVP</span>
+</div>
+</div>
+<div class="mt-6 text-center">
+<h4 class="font-title-lg text-title-lg text-primary">Contemporary Editorial</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Clean sans details paired with multi-event chronology.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: FINAL CALL TO ACTION -->
+<section class="w-full py-space-2xl bg-primary text-on-primary relative overflow-hidden">
+<!-- Subtle Background Accent Line -->
+<div class="absolute inset-0 opacity-5 pointer-events-none bg-[radial-gradient(#C6A66B_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="w-full max-w-[1360px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop text-center relative z-10">
+<div class="flex items-center justify-center gap-3 mb-6">
+<span class="w-12 h-px bg-secondary"></span>
+<span class="material-symbols-outlined text-secondary text-lg">favorite</span>
+<span class="w-12 h-px bg-secondary"></span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-primary tracking-tight max-w-2xl mx-auto mb-6">
+        Make room for the moments that matter.
+      </h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim max-w-xl mx-auto mb-10 leading-relaxed">
+        Keep the budget clear, the conversations harmonious, and the invitations unforgettable. Start your shared workspace today.
+      </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+<a class="inline-flex items-center justify-center bg-background hover:bg-white text-primary font-label-lg text-label-lg px-9 py-4 rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.3)] transition-all" data-path="start-planning" href="#">
+          Start planning free
+          <span class="material-symbols-outlined ml-2 text-base">arrow_forward</span>
+</a>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">
+        Free to start planning · No credit card required · Invite unlimited family members
+      </p>
+</div>
+</section>
+</div>
+<script>
+  // Interactive micro-behavior: Smooth tab clicks on dashboard preview demo
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('button[class*="font-label-md"]');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', (e) => {
+        if (tab.innerText.trim().startsWith('+')) return;
+        tabs.forEach(t => {
+          t.classList.remove('bg-surface-container', 'text-on-surface', 'font-semibold');
+          t.classList.add('text-on-surface-variant');
+        });
+        tab.classList.add('bg-surface-container', 'text-on-surface', 'font-semibold');
+        tab.classList.remove('text-on-surface-variant');
+      });
+    });
+  });
+</script></main><footer class="w-full bg-[#F8F5EF] border-t border-[#E7E1D7] pt-space-2xl pb-space-xl"><div class="w-full max-w-[1360px] mx-auto px-margin-mobile md:px-margin lg:px-margin-desktop"><div class="flex flex-col lg:flex-row items-start justify-between gap-space-xl pb-space-xl border-b border-[#E7E1D7]"><div class="max-w-md"><div class="flex items-center gap-space-sm mb-space-sm"><img alt="Make My Marriage Brandmark" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UiDwkVrTMQjsERsilYVaAqD1TkmZL-FC0y2eL8yFXOUEnTJRcfJZSGAXik6S7RzYP-wIS7NplQ5_WuQoa-ELbqnKWiQOPjUaRFYXhkVfww2LcW3RPDj2NPz9fVXxDJjw_g9cCTQ1BTUAmYDLBmVPjVnBgMNIvW5A8ZUKxcUZtqFCQwcG43U3zEVnvL06yed_2EH60Dek1Q_sNGBlD5tHJdSiJVaOqrErZjilIbU39IgP-q_jmi-sZ2aEs"><span class="font-headline-sm text-headline-sm text-primary">Make My Marriage</span></div><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Bring wedding expenses, family conversations, and beautiful invitations together in one simple place.</p></div><div class="flex flex-wrap gap-x-space-xl gap-y-space-md items-center"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="features" href="#">Features</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="invitations" href="#">Invitations</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="login" href="#">Log in</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="privacy" href="#">Privacy</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="terms" href="#">Terms</a><a class="font-label-lg text-label-lg text-secondary font-semibold hover:text-primary transition-colors inline-flex items-center gap-1" href="#admin-panel-section"><span class="material-symbols-outlined text-xs">tune</span>Admin Panel</a></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-outline">© 2025 Make My Marriage. All rights reserved.</p><p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Heirloom Hospitality · Crafted for Celebrations</p></div></div></footer>
+
+</body></html>

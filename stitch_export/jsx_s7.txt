@@ -1,0 +1,96 @@
+<section className="w-full py-20 bg-[#F4EFE6] border-t border-b border-gold-accent/30">
+<div className="w-full max-w-[1360px] mx-auto px-6 md:px-10 lg:px-14">
+<div className="text-center max-w-2xl mx-auto mb-16">
+<div className="inline-flex items-center gap-2 mb-3">
+<span className="w-8 h-px bg-gold-accent"></span>
+<span className="text-[10px] uppercase font-bold tracking-[0.25em] text-secondary">Heirloom Digital Stationery</span>
+<span className="w-8 h-px bg-gold-accent"></span>
+</div>
+<h2 className="font-headline-lg text-3xl md:text-4xl text-primary mt-1 mb-3">An invitation with the weight of tradition</h2>
+<p className="text-base text-on-surface-variant font-light">Rendered with the tactile warmth, deckled paper texture, and foil-pressed nobility of imperial stationery.</p>
+</div>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Invitation Card 1: Classic Ivory & Champagne Gold -->
+<div className="group relative rounded-2xl p-7 bg-[#FAF6EF] border-2 border-gold-accent/40 shadow-[0_12px_36px_rgba(116,90,39,0.08)] flex flex-col items-center text-center hover:-translate-y-1.5 transition-all">
+<div className="w-full aspect-[3/4] rounded-xl p-6 bg-[#FDFBF7] border border-gold-accent/50 flex flex-col items-center justify-between relative shadow-inner">
+<!-- Double fine filigree gold border -->
+<div className="absolute inset-2 border border-gold-accent/40 pointer-events-none rounded"></div>
+<div className="absolute inset-3 border border-gold-accent/20 pointer-events-none rounded"></div>
+<div className="pt-2">
+<span className="text-[9px] text-secondary uppercase tracking-[0.25em] font-semibold">The Royal Union of</span>
+<h4 className="font-headline-md text-2xl text-primary mt-1 font-normal">Aanya &amp; Kabir</h4>
+</div>
+<div className="my-auto py-2">
+<span className="material-symbols-outlined text-secondary text-2xl mb-1">spa</span>
+<p className="text-xs text-on-surface-variant italic font-cormorant text-base">Request the blessing of your gracious presence</p>
+<p className="text-[10px] uppercase tracking-[0.25em] font-semibold text-primary mt-1.5">UDAIPUR · RAJASTHAN</p>
+</div>
+<div className="w-full pt-3 border-t border-gold-accent/30">
+<span className="text-[10px] text-secondary uppercase tracking-widest font-semibold">December 14 · 2025</span>
+</div>
+</div>
+<div className="mt-6 text-center">
+<h4 className="font-headline-sm text-lg text-primary font-semibold">Royal Heritage Ivory</h4>
+<p className="text-xs text-on-surface-variant mt-1 font-light">Gold-pressed botanicals on textured cotton rag paper.</p>
+</div>
+</div>
+<!-- Invitation Card 2: Deep Emerald Velvet -->
+<div className="group relative rounded-2xl p-7 bg-[#0D221A] text-[#FAF6EF] border-2 border-gold-accent shadow-[0_16px_45px_rgba(13,34,26,0.35)] flex flex-col items-center text-center hover:-translate-y-1.5 transition-all">
+<div className="w-full aspect-[3/4] rounded-xl p-6 bg-[#142F24] border border-gold-accent/60 flex flex-col items-center justify-between relative shadow-inner">
+<div className="absolute inset-2 border border-gold-accent/50 pointer-events-none rounded"></div>
+<div className="absolute inset-3 border border-gold-accent/25 pointer-events-none rounded"></div>
+<div className="pt-2">
+<span className="text-[9px] text-gold-accent uppercase tracking-[0.25em] font-medium">Sacred Pheras &amp; Reception</span>
+<h4 className="font-headline-md text-2xl text-gold-accent mt-1 font-normal">Kabir &amp; Aanya</h4>
+</div>
+<div className="my-auto py-2">
+<div className="w-9 h-9 rounded-full border border-gold-accent mx-auto flex items-center justify-center mb-1.5">
+<span className="material-symbols-outlined text-gold-accent text-sm">star</span>
+</div>
+<p className="text-xs text-gold-light italic font-cormorant text-base font-light">Two souls woven into eternal joy</p>
+<p className="text-[10px] text-[#FAF6EF] mt-1.5 tracking-[0.25em] uppercase font-semibold">THE OBEROI RAJVILAS</p>
+</div>
+<div className="w-full pt-3 border-t border-gold-accent/30">
+<span className="text-[9px] text-gold-accent uppercase tracking-[0.2em] font-medium">Concierge RSVP &amp; Itinerary</span>
+</div>
+</div>
+<div className="mt-6 text-center">
+<h4 className="font-headline-sm text-lg text-gold-accent font-semibold">Imperial Emerald Velvet</h4>
+<p className="text-xs text-gold-light/80 mt-1 font-light">Deep royal jewel tones adorned with brushed gilt borders.</p>
+</div>
+</div>
+<!-- Invitation Card 3: Modern Minimalist Monogram -->
+<div className="group relative rounded-2xl p-7 bg-[#FAF6EF] border-2 border-gold-accent/40 shadow-[0_12px_36px_rgba(116,90,39,0.08)] flex flex-col items-center text-center hover:-translate-y-1.5 transition-all">
+<div className="w-full aspect-[3/4] rounded-xl p-6 bg-[#F4EDE0] border border-gold-accent/40 flex flex-col items-center justify-between relative">
+<div className="pt-2">
+<div className="w-10 h-10 rounded-full border-2 border-gold-accent/60 bg-[#0D221A] text-gold-accent mx-auto flex items-center justify-center mb-2 font-headline-sm text-sm">
+              AK
+            </div>
+<span className="text-[9px] text-outline uppercase tracking-[0.2em] font-bold">Celebration Itinerary</span>
+</div>
+<div className="space-y-2 py-2 text-left w-full px-2">
+<div className="flex justify-between items-center text-xs pb-1 border-b border-gold-accent/20">
+<span className="font-medium text-primary">Mehendi &amp; Sundowner</span>
+<span className="text-outline text-[11px]">Dec 13 · 4 PM</span>
+</div>
+<div className="flex justify-between items-center text-xs pb-1 border-b border-gold-accent/20">
+<span className="font-medium text-primary">Imperial Sangeet</span>
+<span className="text-outline text-[11px]">Dec 13 · 8 PM</span>
+</div>
+<div className="flex justify-between items-center text-xs">
+<span className="font-medium text-primary">Vedic Pheras &amp; Banquet</span>
+<span className="text-outline text-[11px]">Dec 14 · 6 PM</span>
+</div>
+</div>
+<div className="w-full pt-3 border-t border-gold-accent/30">
+<span className="text-[10px] text-primary uppercase font-bold tracking-[0.25em]">TAP TO RSVP CONCIERGE</span>
+</div>
+</div>
+<div className="mt-6 text-center">
+<h4 className="font-headline-sm text-lg text-primary font-semibold">Contemporary Regal Monogram</h4>
+<p className="text-xs text-on-surface-variant mt-1 font-light">Refined typography honoring multi-day ceremony chronology.</p>
+</div>
+</div>
+</div>
+</div>
+</section>

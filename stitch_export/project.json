@@ -1,0 +1,228 @@
+{
+  "name": "projects/9278757021005208285",
+  "title": "Make My Marriage Landing Page",
+  "visibility": "PRIVATE",
+  "createTime": "2026-10-20T13:21:45.909759Z",
+  "updateTime": "2026-10-21T09:16:57.935366Z",
+  "projectType": "TEXT_TO_UI_PRO",
+  "thumbnailScreenshot": {
+    "name": "projects/9278757021005208285/screens/90e5f22e006f4581a132f3426ed64891/fileEntries/screenshot",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UeoP7dlHd4ILD7AmA6Saqy289vYT33k-6A6-yqqdyU4CCwfh-38KGJWFj2SR3-sanirkke6CrhSvGw0q4LX01HWehCho7fHNEFdRfaOuEmt6EC21cTdJDP4KipJ8Jayf1vx6w8p_HYcCDoOh0BOQ-ipcpMPAdLj6D0qsmT5bMs9VMhKkA9rkBQYMKkRZD2ilYJXemId37tJe8Qvqn6uBqqZyhLfLV19YZ74dckAHl7IZjoE0L7srW24jA"
+  },
+  "origin": "STITCH",
+  "deviceType": "DESKTOP",
+  "designTheme": {
+    "colorMode": "LIGHT",
+    "font": "PLAYFAIR_DISPLAY",
+    "roundness": "ROUND_FOUR",
+    "customColor": "#203c32",
+    "headlineFont": "PLAYFAIR_DISPLAY",
+    "bodyFont": "PLUS_JAKARTA_SANS",
+    "labelFont": "PLUS_JAKARTA_SANS",
+    "namedColors": {
+      "surface_container_highest": "#e5e2dc",
+      "on_error_container": "#93000a",
+      "surface_container_lowest": "#ffffff",
+      "surface_container_high": "#ebe8e2",
+      "surface_variant": "#e5e2dc",
+      "on_secondary_container": "#795f2b",
+      "tertiary_fixed_dim": "#c5c7be",
+      "inverse_on_surface": "#f3f0ea",
+      "on_background": "#1c1c18",
+      "primary": "#09261d",
+      "error_container": "#ffdad6",
+      "primary_container": "#203c32",
+      "background": "#fcf9f3",
+      "surface": "#fcf9f3",
+      "on_tertiary_container": "#9ea198",
+      "primary_fixed_dim": "#aecdbf",
+      "on_primary_fixed_variant": "#304c42",
+      "surface_tint": "#486459",
+      "on_secondary_fixed_variant": "#5a4311",
+      "inverse_primary": "#aecdbf",
+      "inverse_surface": "#31312d",
+      "on_secondary_fixed": "#261900",
+      "secondary_fixed_dim": "#e4c284",
+      "on_surface_variant": "#424845",
+      "on_tertiary_fixed_variant": "#454841",
+      "on_primary": "#ffffff",
+      "secondary_container": "#ffdb9b",
+      "surface_container": "#f0eee8",
+      "on_tertiary": "#ffffff",
+      "on_secondary": "#ffffff",
+      "on_tertiary_fixed": "#191d17",
+      "surface_bright": "#fcf9f3",
+      "secondary_fixed": "#ffdea5",
+      "error": "#ba1a1a",
+      "outline": "#727975",
+      "tertiary": "#1f221c",
+      "secondary": "#745a27",
+      "outline_variant": "#c1c8c3",
+      "on_primary_container": "#88a699",
+      "surface_container_low": "#f6f3ed",
+      "surface_dim": "#dcdad4",
+      "on_error": "#ffffff",
+      "primary_fixed": "#caeadb",
+      "tertiary_fixed": "#e1e3da",
+      "on_surface": "#1c1c18",
+      "tertiary_container": "#353831",
+      "on_primary_fixed": "#032017"
+    },
+    "designMd": "---\nname: Atelier Nuptials\ncolors:\n  surface: '#fcf9f3'\n  surface-dim: '#dcdad4'\n  surface-bright: '#fcf9f3'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f6f3ed'\n  surface-container: '#f0eee8'\n  surface-container-high: '#ebe8e2'\n  surface-container-highest: '#e5e2dc'\n  on-surface: '#1c1c18'\n  on-surface-variant: '#424845'\n  inverse-surface: '#31312d'\n  inverse-on-surface: '#f3f0ea'\n  outline: '#727975'\n  outline-variant: '#c1c8c3'\n  surface-tint: '#486459'\n  primary: '#09261d'\n  on-primary: '#ffffff'\n  primary-container: '#203c32'\n  on-primary-container: '#88a699'\n  inverse-primary: '#aecdbf'\n  secondary: '#745a27'\n  on-secondary: '#ffffff'\n  secondary-container: '#ffdb9b'\n  on-secondary-container: '#795f2b'\n  tertiary: '#1f221c'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#353831'\n  on-tertiary-container: '#9ea198'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#caeadb'\n  primary-fixed-dim: '#aecdbf'\n  on-primary-fixed: '#032017'\n  on-primary-fixed-variant: '#304c42'\n  secondary-fixed: '#ffdea5'\n  secondary-fixed-dim: '#e4c284'\n  on-secondary-fixed: '#261900'\n  on-secondary-fixed-variant: '#5a4311'\n  tertiary-fixed: '#e1e3da'\n  tertiary-fixed-dim: '#c5c7be'\n  on-tertiary-fixed: '#191d17'\n  on-tertiary-fixed-variant: '#454841'\n  background: '#fcf9f3'\n  on-background: '#1c1c18'\n  surface-variant: '#e5e2dc'\ntypography:\n  headline-xl:\n    fontFamily: Playfair Display\n    fontSize: 56px\n    fontWeight: '400'\n    lineHeight: 68px\n    letterSpacing: -0.02em\n  headline-xl-mobile:\n    fontFamily: Playfair Display\n    fontSize: 38px\n    fontWeight: '400'\n    lineHeight: 48px\n    letterSpacing: -0.01em\n  headline-lg:\n    fontFamily: Playfair Display\n    fontSize: 40px\n    fontWeight: '500'\n    lineHeight: 50px\n    letterSpacing: -0.01em\n  headline-lg-mobile:\n    fontFamily: Playfair Display\n    fontSize: 30px\n    fontWeight: '500'\n    lineHeight: 40px\n  headline-md:\n    fontFamily: Playfair Display\n    fontSize: 28px\n    fontWeight: '500'\n    lineHeight: 36px\n  headline-sm:\n    fontFamily: Playfair Display\n    fontSize: 22px\n    fontWeight: '600'\n    lineHeight: 30px\n  title-lg:\n    fontFamily: Playfair Display\n    fontSize: 19px\n    fontWeight: '600'\n    lineHeight: 26px\n  body-lg:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 17px\n    fontWeight: '400'\n    lineHeight: 28px\n  body-md:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 15px\n    fontWeight: '400'\n    lineHeight: 24px\n  body-sm:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 13px\n    fontWeight: '400'\n    lineHeight: 20px\n  label-lg:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 14px\n    fontWeight: '600'\n    lineHeight: 20px\n    letterSpacing: 0.02em\n  label-md:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.04em\n  label-caps:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 11px\n    fontWeight: '700'\n    lineHeight: 14px\n    letterSpacing: 0.14em\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  gutter: 1.5rem\n  gutter-mobile: 1rem\n  gutter-desktop: 2.5rem\n  margin: 2rem\n  margin-mobile: 1.25rem\n  margin-desktop: 5rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.5rem\n  space-xl: 2.5rem\n  space-2xl: 4rem\n---\n\n## Brand & Style\n\nThis design system embodies high-end boutique hospitality, bespoke wedding stationery, and serene collaborative technology. The aesthetic merges traditional Indian celebratory grandeur with modern, restrained architectural minimalism. It rejects the loud, chaotic red-and-marigold tropes typically associated with wedding software in favor of an heirloom editorial poise: curated, calm, deeply personal, and quietly luxurious.\n\nThe visual style is **Editorial Minimalist with Tactile Papercraft Influences**. Surfaces emulate heavyweight cotton rag paper and hand-pressed stationery, defined by micro-fine hairlines, generous breathing room, structured asymmetric grids, and unhurried interactions.\n\nKey principles:\n- **Quiet Splendor:** Elegance via restraint. Gold is an intentional embellishment, never an all-over flood.\n- **Ceremonial Composure:** High-stress coordination transformed into serene rituals through spacious layouts and muted tone-on-tone cards.\n- **Architectural Craft:** Sharp hairline boundaries, disciplined typographic balance, and warm tactile depth.\n\n## Colors\n\nThe palette references royal royal botanical conservatories, warm heritage marble, and hand-gilded foil edges. \n\n- **Primary (`#203C32` — Deep Royal Emerald):** Used for authoritative headers, structural action surfaces, primary buttons, and key interactive highlights. Delivers heritage weight without stark digital blackness.\n- **Secondary (`#C6A66B` — Champagne Gold):** A balanced, matte metallic accent reserved for active focus indicators, ceremonial tags, subtle icons, foil badges, and luxury milestones.\n- **Tertiary (`#74776F` — Muted Warm Grey):** For secondary metadata, breadcrumbs, helper hints, and tertiary interactive states.\n- **Neutral Canvas (`#F8F5EF` — Warm Ivory):** The atmospheric canvas tone, replacing default blinding cold whites with the warmth of heavyweight raw paper.\n- **Card & Sheet Surfaces (`#FFFFFF` — Crisp White):** Lifted work areas, document sheets, interactive modals, and raised cards to provide pristine contrast.\n- **Body Charcoal (`#252923`):** High-legibility text tone carrying an organic dark umber cast rather than harsh synthetic black.\n- **Hairline Border (`#E7E1D7`):** Sandstone-toned boundaries for structural grid division, subtle table dividers, and framed inputs.\n\n## Typography\n\nThe type system creates an intentional tension between the romantic cadence of **Playfair Display** and the crisp modern clarity of **Plus Jakarta Sans**. \n\n- **Display & Headlines:** Playfair Display introduces literary character, editorial authority, and celebration. Display weights remain medium or regular to emulate engraved typography rather than heavy advertising display.\n- **Body & Data:** Plus Jakarta Sans provides contemporary readability for multi-tier budget spreadsheets, multi-guest RSVPs, timeline scheduling, and vendor checklists without visual friction.\n- **Eyebrows & Metadata:** Use `label-caps` in uppercase with expanded tracking (`0.14em`) for itinerary days, status ribbons, and stationery tags.\n\n## Layout & Spacing\n\nThe design system relies on a **12-column responsive fluid grid** anchored by expansive horizontal margins on desktop to evoke broad editorial page spreads.\n\n- **Desktop (1200px+):** 12 columns, `margin-desktop` (5rem/80px), `gutter-desktop` (2.5rem/40px). Max content container: `1360px` centered.\n- **Tablet (768px – 1199px):** 8 columns, `margin` (2rem/32px), `gutter` (1.5rem/24px).\n- **Mobile (< 767px):** 4 columns, `margin-mobile` (1.25rem/20px), `gutter-mobile` (1rem/16px).\n\n### Spacing Philosophy\nNegative space is a luxury asset. Section breaks employ generous breathing room (`space-2xl`), while transactional modules (guest seating, budget rows) stay tightly bounded using `space-sm` and `space-md` within cards to maintain systematic rigor.\n\n## Elevation & Depth\n\nDepth is established primarily through **tactile surface stratification and low-contrast borders**, supplemented by diffused, amber-tinted ambient shadows. Dark, heavy grey shadows are strictly prohibited.\n\n- **Level 0 (Atmospheric Ground):** `#F8F5EF` canvas.\n- **Level 1 (Stationery Pane / Card):** `#FFFFFF` surface enclosed by a 1px solid `#E7E1D7` border. Shadow: `0 1px 3px rgba(32, 60, 50, 0.03)`.\n- **Level 2 (Hovered Sheets & Floating Menus):** `#FFFFFF` with 1px `#E7E1D7` border. Shadow: `0 8px 24px -4px rgba(37, 41, 35, 0.05), 0 2px 6px -1px rgba(198, 166, 107, 0.08)`.\n- **Level 3 (Ceremonial Overlays & Drawers):** Modal cards framed by `#E7E1D7`. Backdrop: `#203C32` tinted to `24%` opacity with `6px` backdrop blur (`blur(6px)`), generating a soft botanical veil behind high-focus tasks. Shadow: `0 20px 40px -10px rgba(32, 60, 50, 0.12)`.\n\n## Shapes\n\nThe shape system adopts a **soft, architectural profile (`roundedness: 1`)**. Rounded corners stay slight and tailored (4px base, 8px for cards, 12px max for modals), referencing fine stationery cards, envelope flaps, and beveled stone rather than casual circular bubbles.\n\n- **Base Components (Inputs, Buttons, Badges):** `4px` (`0.25rem`).\n- **Cards, Panels, & Media Frames:** `8px` (`0.5rem`).\n- **Modals & Flyouts:** `12px` (`0.75rem`).\n- **Pills / Status Dots:** Fully rounded (`9999px`) applied strictly to status counters, avatar rings, and micro-tag indicators.\n\n## Components\n\n### Buttons\n- **Primary:** Deep Emerald background (`#203C32`), Crisp White text (`#FFFFFF`), `4px` radius. Padding: `12px 24px`. Subtle focus ring: `2px` offset `#C6A66B`. Hover transitions to slightly darker emerald tint (`#162B24`).\n- **Secondary / Outline:** `#FFFFFF` background, `#203C32` text, framed with a 1px solid `#E7E1D7` border. On hover: border tints to `#C6A66B` and text shifts to `#C6A66B`.\n- **Champagne Accent / Festive Action:** Champagne Gold (`#C6A66B`) background with Deep Emerald text (`#203C32`). Reserved for final confirmations, RSVP sends, and VIP milestones.\n- **Ghost:** Transparent background, `#203C32` text with `label-lg` tracking, underlined on hover with a 1px `#C6A66B` rule.\n\n### Input Fields & Selects\n- Crisp White surface (`#FFFFFF`) framed by a `1px` border of `#E7E1D7`. Text in `#252923`, placeholder in `#74776F`.\n- Focused state: 1px border swaps to `#C6A66B` paired with a soft `0 0 0 3px rgba(198, 166, 107, 0.15)` ring.\n- Labels use `label-caps` in `#203C32`, positioned above the input with `6px` spacing.\n\n### Cards & Itinerary Modules\n- Backed in `#FFFFFF`, edged in `1px` `#E7E1D7`. \n- Padding: `24px` to `32px`. \n- Optional luxury touch: A delicate top hairline border accented in Champagne Gold (`#C6A66B`) for multi-day ceremony events (e.g., Sangeet, Mehendi, Pheras).\n\n### Chips & Badges\n- **Editorial Tag:** `#F8F5EF` background, 1px `#E7E1D7` border, `#252923` label text, `4px` corner radius.\n- **Gold Tier / Confirmed:** Light Champagne tint (`rgba(198, 166, 107, 0.15)`), solid `#C6A66B` text, `4px` radius.\n\n### Checkboxes & Radios\n- Square (`4px` radius) or circular controls in `1px` `#E7E1D7`.\n- Checked state: Fill `#203C32` with Crisp White checkmark icon or Champagne Gold inner dot.\n\n### Lists & Data Rows (Guest Lists, Budgets)\n- Separated by hairline dividers (`1px` solid `#E7E1D7`).\n- Hover state: soft `#F8F5EF` background wash across the row with `200ms ease-out` transition.\n\n### Bespoke Domain Components\n- **Ceremony Timeline Ribbon:** Vertical or horizontal chronology line in `1px` `#E7E1D7`, punctuated by small gold diamond nodes (`#C6A66B`) marking wedding events.\n- **Gift & Shagun Ledger Card:** Refined financial card featuring oversized Playfair numerals (`headline-md`) in `#203C32` paired with `label-caps` status markers.",
+    "colorVariant": "FIDELITY",
+    "overridePrimaryColor": "#203c32",
+    "overrideSecondaryColor": "#c6a66b",
+    "overrideTertiaryColor": "#74776f",
+    "overrideNeutralColor": "#f8f5ef",
+    "spacingScale": 2,
+    "typography": {
+      "headline-xl": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "56px",
+        "fontWeight": "400",
+        "lineHeight": "68px",
+        "letterSpacing": "-0.02em"
+      },
+      "headline-lg-mobile": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "30px",
+        "fontWeight": "500",
+        "lineHeight": "40px"
+      },
+      "body-sm": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "lineHeight": "20px"
+      },
+      "label-lg": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "lineHeight": "20px",
+        "letterSpacing": "0.02em"
+      },
+      "headline-sm": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "22px",
+        "fontWeight": "600",
+        "lineHeight": "30px"
+      },
+      "headline-md": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "28px",
+        "fontWeight": "500",
+        "lineHeight": "36px"
+      },
+      "label-md": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "lineHeight": "16px",
+        "letterSpacing": "0.04em"
+      },
+      "body-lg": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "lineHeight": "28px"
+      },
+      "title-lg": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "19px",
+        "fontWeight": "600",
+        "lineHeight": "26px"
+      },
+      "headline-xl-mobile": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "38px",
+        "fontWeight": "400",
+        "lineHeight": "48px",
+        "letterSpacing": "-0.01em"
+      },
+      "body-md": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "24px"
+      },
+      "label-caps": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "11px",
+        "fontWeight": "700",
+        "lineHeight": "14px",
+        "letterSpacing": "0.14em"
+      },
+      "headline-lg": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "40px",
+        "fontWeight": "500",
+        "lineHeight": "50px",
+        "letterSpacing": "-0.01em"
+      }
+    },
+    "spacing": {
+      "space-xl": "2.5rem",
+      "margin": "2rem",
+      "space-lg": "1.5rem",
+      "space-sm": "0.5rem",
+      "space-md": "1rem",
+      "space-2xl": "4rem",
+      "space-xs": "0.25rem",
+      "gutter": "1.5rem",
+      "gutter-desktop": "2.5rem",
+      "margin-mobile": "1.25rem",
+      "gutter-mobile": "1rem",
+      "margin-desktop": "5rem"
+    },
+    "headlineFontFamily": "Playfair Display",
+    "bodyFontFamily": "Plus Jakarta Sans",
+    "labelFontFamily": "Plus Jakarta Sans"
+  },
+  "screenInstances": [
+    {
+      "id": "46f4d1b538a14ff99fcfb5a06c14760d",
+      "sourceScreen": "projects/9278757021005208285/screens/46f4d1b538a14ff99fcfb5a06c14760d",
+      "x": 2386,
+      "y": 94,
+      "width": 1280,
+      "height": 7225,
+      "label": "Generating Screen..."
+    },
+    {
+      "id": "6d0a1938e566403fae6ead26005ca1a2",
+      "sourceScreen": "projects/9278757021005208285/screens/6d0a1938e566403fae6ead26005ca1a2",
+      "x": 3826,
+      "y": 84,
+      "width": 1280,
+      "height": 6828,
+      "label": "Generating Screen..."
+    },
+    {
+      "id": "70b0a954a8ec4236937c9119682c5f62",
+      "sourceScreen": "projects/9278757021005208285/screens/70b0a954a8ec4236937c9119682c5f62",
+      "width": 512,
+      "height": 382,
+      "label": "Generating Image..."
+    },
+    {
+      "id": "90e5f22e006f4581a132f3426ed64891",
+      "sourceScreen": "projects/9278757021005208285/screens/90e5f22e006f4581a132f3426ed64891",
+      "x": 576,
+      "width": 512,
+      "height": 512,
+      "label": "Generating Image..."
+    },
+    {
+      "id": "assets_d09187861ced4cb3b466001ab86be05c",
+      "x": 1152,
+      "width": 960,
+      "height": 540,
+      "sourceAsset": "assets/d09187861ced4cb3b466001ab86be05c",
+      "type": "DESIGN_SYSTEM_INSTANCE"
+    }
+  ],
+  "metadata": {
+    "userRole": "OWNER"
+  }
+}
